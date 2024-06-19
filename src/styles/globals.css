@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+  --base-100: #FFF;
+  --base-200: #EDEFF0;
+  --base-300: #9098A0;
+  --base-400: #555E67;
+  --base-500: #31373D;
+  --base-600: #1D1E20;
+
+  --base-dark-100: #F4F5F6;
+  --base-dark-200: #D3D5D9;
+  --base-dark-300: #B2B6BD;
+  --base-dark-400: #9CA1AA;
+  --base-dark-500: #4B4F58;
+  --base-dark-600: #232529;
+
+  --blue-100: #F5F8FE;
+  --blue-200: #D9E5FC;
+  --blue-300: #B3CCFA;
+  --blue-400: #79A5F6;
+  --blue-500: #538BF3;
+  --blue-600: #266DF0;
+  }
+}

@@ -5,9 +5,9 @@ export default {
   content: ['./src/**/*.tsx'],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-geist-sans)', ...fontFamily.sans]
-      }
+    maxWidth: {
+      'screen-2xl': '87.5rem',
+    },
     }
   },
   plugins: []

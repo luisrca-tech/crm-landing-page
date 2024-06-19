@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  html {
+  --font-body: "Inter", sans-serif;
+  --font-head: "Open Sans", sans-serif, bold;
+
+  --font-size-heading-primary-desk: 5.75rem;
+  --line-height-heading-primary-desk: 6rem;
+  --letter-spacing-heading-primary-desk: -3.6px;
+
+  --font-size-heading-secondary-desk: 3.25rem;
+  --line-height-heading-secondary-desk: 3.625rem;
+  --letter-spacing-heading-secondary-desk: -1.2px;
+
+  --font-size-heading-tertiary-desk: 2.5rem;
+  --line-height-heading-tertiary-desk: 2.75rem;
+  --letter-spacing-heading-tertiary-desk: -0.8px;
+
+  --font-size-heading-primary-mob: 5.75rem;
+  --line-height-heading-primary-mob: 3.5rem;
+  --letter-spacing-heading-primary-mob: -1.5px;
+
+  --font-size-heading-secondary-mob: 2rem;
+  --line-height-heading-secondary-mob: 2.375rem;
+  --letter-spacing-heading-secondary-mob: -0.5px;
+
+  --font-size-heading-tertiary-mob: 1.5rem;
+  --line-height-heading-tertiary-mob: 1.625rem;
+  --letter-spacing-heading-tertiary-mob: -0.8px;
+
+  --font-size-2xl: 1.375rem;
+  --line-height-2xl: 2rem;
+  --letter-spacing-2xl: -0.3px;
+
+  --font-size-xl: 1.25rem;
+  --line-height-xl: 1.75rem;
+  --letter-spacing-xl: -0.2px;
+
+  --font-size-lg: 1.125rem;
+  --line-height-lg: 1.625rem;
+  --letter-spacing-lg: -0.2px;
+
+  --font-size-md: 1rem;
+  --line-height-md: 1.5rem;
+  --letter-spacing-md: -0.2px;
+
+  --font-size-base: 0.875rem;
+  --line-height-base: 1.25rem;
+  --letter-spacing-base: -0.1px;
+
+  --font-size-sm: 0.75rem;
+  --line-height-sm: 1.125rem;
+
+  --font-size-xsm: 0.625rem;
+  --line-height-xsm: 0.875rem;
+  --letter-spacing-xsm: 0.6px;
+  }
+}

@@ -5,8 +5,9 @@ export default {
   content: ['./src/**/*.tsx'],
   theme: {
     extend: {
-    maxWidth: {
-      'screen-2xl': '87.5rem',
+    screens: {
+      '2xl': '87.5rem',
+      '3xl': '100rem'
     },
     }
   },

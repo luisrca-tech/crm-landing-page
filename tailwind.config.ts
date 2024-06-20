@@ -1,38 +1,34 @@
 import { type Config } from 'tailwindcss';
-import { fontFamily } from 'tailwindcss/defaultTheme';
 
 export default {
   content: ['./src/**/*.tsx'],
   theme: {
       colors: {
-        'base': {
-          100: '#FFF',
-          200: '#EDEFF0',
-          300: '#9098A0',
-          400: '#555E67',
-          500: '#31373D',
-          600: '#1D1E20',
+        base: {
+          100: 'rgb(var(--base-100) / <alpha-value>)',
+          200: 'rgb(var(--base-200) / <alpha-value>)',
+          300: 'rgb(var(--base-300) / <alpha-value>)',
+          400: 'rgb(var(--base-400) / <alpha-value>)',
+          500: 'rgb(var(--base-500) / <alpha-value>)',
+          600: 'rgb(var(--base-600) / <alpha-value>)',
         },
         'base-dark': {
-          100: '#F4F5F6',
-          200: '#D3D5D9',
-          300: '#B2B6BD',
-          400: '#9CA1AA',
-          500: '#4B4F58',
-          600: '#232529',
+          100: 'rgb(var(--base-dark-100) / <alpha-value>)',
+          200: 'rgb(var(--base-dark-200) / <alpha-value>)',
+          300: 'rgb(var(--base-dark-300) / <alpha-value>)',
+          400: 'rgb(var(--base-dark-400) / <alpha-value>)',
+          500: 'rgb(var(--base-dark-500) / <alpha-value>)',
+          600: 'rgb(var(--base-dark-600) / <alpha-value>)',
         },
-        'blue': {
-          100: '#F5F8FE',
-          200: '#D9E5FC',
-          300: '#B3CCFA',
-          400: '#79A5F6',
-          500: '#538BF3',
-          600: '#266DF0',
+        blue: {
+          100: 'rgb(var(--blue-100) / <alpha-value>)',
+          200: 'rgb(var(--blue-200) / <alpha-value>)',
+          300: 'rgb(var(--blue-300) / <alpha-value>)',
+          400: 'rgb(var(--blue-400) / <alpha-value>)',
+          500: 'rgb(var(--blue-500) / <alpha-value>)',
+          600: 'rgb(var(--blue-600) / <alpha-value>)',
         },
       },
-      fontFamily: {
-        sans: ['var(--font-geist-sans)', ...fontFamily.sans]
-    }
   },
-  plugins: []
+  plugins: [],
 } satisfies Config;

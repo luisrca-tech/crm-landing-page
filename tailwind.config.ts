@@ -4,36 +4,36 @@ export default {
   content: ['./src/**/*.tsx'],
   theme: {
       fontFamily: {
-        'body': ["Inter"],
-        'head': ["Open Sans"]
+        Inter: ['var(--font-inter)'],
+        OpenSans: ['var(--font-open_sans)']
       },
       fontSize: {
-        'heading-primary-desk': [
+        '3xl-desktop': [
           '5.75rem', {
             lineHeight: '6rem',
             letterSpacing: '-3.6px',
           }],
-          'heading-secondary-desk': [
+          '2xl-desktop': [
           '3.25rem', {
             lineHeight: '3.625rem',
             letterSpacing: '-1.2px',
           }],
-          'heading-tertiary-desk': [
+          'xl-desktop': [
           '2.5rem', {
             lineHeight: '2.75rem',
             letterSpacing: '-0.8px',
           }],
-          'heading-primary-mob': [
+          '3xl-mobile': [
           '5.75rem', {
             lineHeight: '3.5rem',
             letterSpacing: '-1.5px',
           }],
-          'heading-secondary-mob': [
+          '2xl-mobile': [
           '2rem', {
             lineHeight: '2.375rem',
             letterSpacing: '-0.5px',
           }],
-          'heading-tertiary-mob': [
+          'xl-mobile': [
           '1.5rem', {
             lineHeight: '1.625rem',
             letterSpacing: '-0.8px',

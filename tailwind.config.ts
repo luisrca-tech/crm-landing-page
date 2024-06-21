@@ -4,8 +4,8 @@ export default {
   content: ['./src/**/*.tsx'],
   theme: {
       fontFamily: {
-        Inter: ['var(--font-inter)'],
-        OpenSans: ['var(--font-open_sans)']
+        inter: ['var(--font-inter)'],
+        opensans: ['var(--font-open_sans)']
       },
       fontSize: {
         '3xl-desktop': [

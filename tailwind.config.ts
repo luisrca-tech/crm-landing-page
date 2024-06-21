@@ -3,6 +3,12 @@ import { type Config } from 'tailwindcss';
 export default {
   content: ['./src/**/*.tsx'],
   theme: {
+      extend: {
+        screens: {
+          '2xl': '87.5rem',
+          '3xl': '100rem'
+        },
+      },
       colors: {
         base: {
           100: 'rgb(var(--base-100) / <alpha-value>)',

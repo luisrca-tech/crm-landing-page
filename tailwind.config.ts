@@ -35,6 +35,10 @@ export default {
           600: 'rgb(var(--blue-600) / <alpha-value>)',
         },
       },
+        fontFamily: {
+        inter: ['var(--font-inter)'],
+        opensans: ['var(--font-open_sans)']
+      },
   },
   plugins: [],
 } satisfies Config;

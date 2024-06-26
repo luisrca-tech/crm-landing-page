@@ -26,3 +26,9 @@
     --blue-600: 38 109 240;
   }
 }
+
+@layer html {
+  :root {
+    scroll-behavior: smooth;
+  }
+}

@@ -13,7 +13,7 @@ import { BoxSection } from './BoxSection';
 
 export function YourDataAndFlows() {
   return (
-    <div className="flex flex-col gap-7 px-6">
+    <div className="flex flex-col gap-7">
       <HeaderSection
         title="Modele seus dados e fluxos."
         description="Um CRM precisa ir além de negociações. Attio é construído para qualquer processo de negócio."
@@ -21,15 +21,15 @@ export function YourDataAndFlows() {
 
       <div className="mt-9 flex flex-col gap-7">
         <BoxSection
-          height="32"
           title="Sempre conecte aos seus dados."
           description="Sincronize continuamente com seu produto, despesas e relacionamentos em sua área de trabalho."
+          hasImagePadding
         >
-          <div className="absolute bottom-1 right-1 h-[20rem] w-[17rem] rounded-tl-[19.5px] border-[0.0225rem] border-base-dark-100 bg-blue-100">
-            <div className="h-full w-full overflow-hidden rounded-lg bg-[#F9F9FB]">
+          <div className="rounded-3xl border-[0.0225rem] border-base-dark-100 bg-blue-100">
+            <div className="h-full w-full overflow-hidden rounded-3xl bg-[#F9F9FB]">
               <Image
                 priority
-                className="w-full rounded-lg object-cover"
+                className="w-full rounded-3xl object-cover"
                 src={Workspaces}
                 alt="Imagem de um espaço virtual de trabalho"
               />
@@ -37,11 +37,10 @@ export function YourDataAndFlows() {
           </div>
         </BoxSection>
         <BoxSection
-          height="26.3"
           title="Um CRM para qualquer caso."
           description="Facilmente crie objetos customizados para conectar seu negócio a uma estrutura de dados unica."
         >
-          <div className="absolute bottom-[6.5px] w-[18.5625rem] rounded-b-[1.20rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
+          <div className="rounded-b-[1.20rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
             <div className="h-full w-full overflow-hidden rounded-lg bg-[#F9F9FB]">
               <Image
                 priority
@@ -52,8 +51,8 @@ export function YourDataAndFlows() {
             </div>
           </div>
         </BoxSection>
-        <BoxSection height="20">
-          <div className="absolute h-full w-full rounded-[1.25rem] border-[0.0225rem] border-base-dark-100 bg-blue-100 p-1">
+        <BoxSection>
+          <div className="rounded-[1.25rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
             <div className="h-full w-full overflow-hidden rounded-[1.25rem] bg-[#F9F9FB]">
               <Image
                 priority

@@ -5,7 +5,7 @@ interface HeaderSectionProps {
 
 export function HeaderSection({ title, description }: HeaderSectionProps) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 ml-1">
       <h1 className="font-opensans text-[2rem] font-bold italic leading-[2.375rem] tracking-tighter">
         {title}
       </h1>

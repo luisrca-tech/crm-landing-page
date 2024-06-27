@@ -39,7 +39,7 @@ export function CreatedForYou() {
                       <Image
                         className="h-[1.125rem] w-[1.125rem]"
                         src={item.icon}
-                        alt=""
+                        alt={item.altIcon}
                       />
                       <h2 className="text-lg font-medium leading-[1.625rem] tracking-tight text-base-600">
                         {item.title}
@@ -51,7 +51,7 @@ export function CreatedForYou() {
                   </div>
                   <div className="absolute bottom-1 right-1 w-[16rem] overflow-hidden rounded-lg border-[0.0225rem] border-base-dark-100 bg-blue-100">
                     <div className="h-[11rem] w-full overflow-hidden rounded-lg bg-[#F9F9FB]">
-                      <Image className="w-full" src={item.image} alt="" />
+                      <Image className="w-full" src={item.image} alt={item.alt} />
                     </div>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export function CreatedForYou() {
         </div>
       </Carousel>
       <div className="flex flex-col items-start justify-start gap-6">
-        <Image src={Avatar} alt="" />
+        <Image src={Avatar} alt="Imagem de uma mulher com um fundo preto" />
         <h3 className="text-lg font-normal leading-[1.625rem] tracking-tight text-base-600">
           “Minha equipe ama trabalhar com os relatórios do Attio porque são
           muito dinamicos.”

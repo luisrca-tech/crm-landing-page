@@ -5,7 +5,7 @@ import Grapich from '../../../public/images/Grapich.png';
 
 export function Hero() {
   return (
-    <section>
+    <section className="xsm:hidden">
       <div className="mt-8 flex flex-col items-center justify-center gap-4">
         <h1 className="flex flex-col items-center justify-center font-opensans text-5xl font-bold italic leading-[3.5rem] tracking-tighter">
           <span className="ml-6">A mágica do</span> relacionamento
@@ -21,7 +21,7 @@ export function Hero() {
         </Link>
 
         <div className="flex h-[17.375rem] w-full items-center justify-center">
-          <Image priority src={Grapich} alt="" />
+          <Image priority src={Grapich} alt="Imagem de um gráfico de tarefas" />
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ import { BoxSection } from './BoxSection';
 
 export function YourDataAndFlows() {
   return (
-    <div className="flex flex-col gap-7">
+    <div className="ml-1 flex flex-col gap-7">
       <HeaderSection
         title="Modele seus dados e fluxos."
         description="Um CRM precisa ir além de negociações. Attio é construído para qualquer processo de negócio."
@@ -23,15 +23,16 @@ export function YourDataAndFlows() {
         <BoxSection
           title="Sempre conecte aos seus dados."
           description="Sincronize continuamente com seu produto, despesas e relacionamentos em sua área de trabalho."
-          hasImagePadding
         >
-          <div className="rounded-3xl border-[0.0225rem] border-base-dark-100 bg-blue-100">
-            <div className="h-full w-full overflow-hidden rounded-3xl bg-[#F9F9FB]">
+          <div className="ml-6 rounded-[1.25rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
+            <div className="h-full w-full overflow-hidden rounded-[1.25rem] bg-[#F9F9FB]">
               <Image
-                priority
-                className="w-full rounded-3xl object-cover"
+                className="w-full object-cover"
                 src={Workspaces}
                 alt="Imagem de um espaço virtual de trabalho"
+                width={519}
+                height={347.25}
+                layout="responsive"
               />
             </div>
           </div>
@@ -43,10 +44,12 @@ export function YourDataAndFlows() {
           <div className="rounded-b-[1.20rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
             <div className="h-full w-full overflow-hidden rounded-lg bg-[#F9F9FB]">
               <Image
-                priority
                 className="w-full rounded-lg object-cover"
                 src={Fluxo}
                 alt="Imagem de um fluxograma"
+                layout="responsive"
+                width={303}
+                height={239}
               />
             </div>
           </div>
@@ -55,10 +58,12 @@ export function YourDataAndFlows() {
           <div className="rounded-[1.25rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
             <div className="h-full w-full overflow-hidden rounded-[1.25rem] bg-[#F9F9FB]">
               <Image
-                priority
                 className="w-full rounded-lg object-cover"
                 src={Object}
                 alt="Imagem de um fluxograma"
+                layout="responsive"
+                width={299}
+                height={357}
               />
             </div>
           </div>
@@ -75,7 +80,7 @@ export function YourDataAndFlows() {
                     <Image
                       className="h-full w-full object-cover"
                       src={box.image}
-                      alt=""
+                      alt="Imagens de icones de aplicativos de ferramentas web"
                     />
                   </div>
                 </div>

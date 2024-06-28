@@ -8,7 +8,7 @@ await import('./src/env.js');
 const config = {
   async headers() {
     const headers = [];
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.VERCEL_ENV !== 'production') {
       headers.push({
         source: '/(.*)',
         headers: [

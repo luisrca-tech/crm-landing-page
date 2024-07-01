@@ -48,7 +48,7 @@ export function Header() {
               />
             </SheetTrigger>
             <SheetOverlay />
-            <SheetContent className="flex min-h-screen flex-col">
+            <SheetContent className="flex flex-col">
               <SheetHeader>
                 <SheetTitle>Attios Menu</SheetTitle>
               </SheetHeader>
@@ -57,9 +57,12 @@ export function Header() {
                   <ul>
                     {NavigationItems.map((item) => (
                       <li key={item.href}>
-                        <SheetDescription>
-                          <Link href={item.href}>{item.label}</Link>
-                        </SheetDescription>
+                        <Link
+                          className="mt-4 flex flex-col gap-4 text-sm text-base-dark-600"
+                          href={item.href}
+                        >
+                          {item.label}
+                        </Link>
                       </li>
                     ))}
                   </ul>

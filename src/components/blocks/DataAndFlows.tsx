@@ -7,9 +7,11 @@ import Workspaces from '../../../public/images/Workspaces.png';
 import Fluxo from '../../../public/images/Fluxo.png';
 import Object from '../../../public/images/Object.png';
 import { BoxToolsImages } from '~/constant/box-tools-images';
-import { Feedbacks } from './Feedbacks';
 import { HeaderSection } from './HeaderSection';
 import { BoxSection } from './BoxSection';
+import { Testimonials } from './Testimonials';
+
+import Box from '../../../public/images/Box.png';
 
 export function YourDataAndFlows() {
   return (
@@ -89,7 +91,7 @@ export function YourDataAndFlows() {
           </div>
         </div>
       </div>
-      <Feedbacks
+      <Testimonials
         Avatar={Avatar}
         alt="Imagem de perfil de um homem loiro"
         description="“Attio é um produto flexivel, você pode construir qualquer coisa nele. Com as ferramentas que você precisa, pode construir um CRM que é exatamente o melhor para sua empresa, seus dados e seus processos."
@@ -97,5 +99,23 @@ export function YourDataAndFlows() {
         role="Founder"
       />
     </div>
+  );
+}
+
+export function DataAndFlowsWithBoxline() {
+  return (
+    <section className="xsm:hidden">
+      <div className="relative flex h-full w-full gap-3">
+        <div className="flex h-full w-[2.125rem] flex-col items-center justify-center">
+          <Image
+            className="absolute -left-3 top-1"
+            src={Box}
+            alt="Icone de caixa tridimensional"
+          />
+          <div className="h-full w-[0.09375rem] rounded-lg bg-gradient-to-b from-[rgba(255,255,255,1)] via-[rgba(217,217,217,0.8)] to-[rgba(255,255,255,1)]"></div>
+        </div>
+        <YourDataAndFlows />
+      </div>
+    </section>
   );
 }

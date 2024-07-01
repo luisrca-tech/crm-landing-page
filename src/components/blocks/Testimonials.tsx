@@ -1,6 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from 'next/image';
 
-interface FeedbacksProps {
+interface TestimonialsProps {
   Avatar: StaticImageData;
   alt: string;
   description: string;
@@ -8,10 +8,16 @@ interface FeedbacksProps {
   role: string;
 }
 
-export function Feedbacks({ Avatar, alt, description, name, role }: FeedbacksProps) {
+export function Testimonials({
+  Avatar,
+  alt,
+  description,
+  name,
+  role
+}: TestimonialsProps) {
   return (
     <>
-      <div className="flex flex-col items-start justify-start gap-6 mt-10">
+      <div className="mt-10 flex flex-col items-start justify-start gap-6">
         <Image src={Avatar} alt={alt} />
         <h3 className="text-lg font-normal leading-[1.625rem] tracking-tight text-base-600">
           {description}

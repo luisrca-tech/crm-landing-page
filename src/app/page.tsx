@@ -8,7 +8,7 @@ export default function HomePage() {
         <h1>CRM - LANDING PAGE</h1>
       </Container>
       <div className="min-h-screen bg-base-600">
-        <Container hasBgBlack>
+        <Container>
           <MuchMore />
         </Container>
       </div>

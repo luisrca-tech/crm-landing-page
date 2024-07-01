@@ -27,15 +27,17 @@ export function Header() {
             src={LogoAttios as StaticImageData}
             alt="Logo da empresa Attios CRM"
           />
-          <div className="hidden gap-4 lg:flex">
-            {NavigationItems.map((item) => {
-              return (
-                <div className="px-2 py-4" key={item.href}>
-                  <Link href={item.href}>{item.label}</Link>
-                </div>
-              );
-            })}
-          </div>
+          <nav className="hidden lg:block">
+            <ul className="flex gap-4">
+              {NavigationItems.map((item) => {
+                return (
+                  <li className="px-2 py-4" key={item.href}>
+                    <Link href={item.href}>{item.label}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
         </div>
         <div className="lg:hidden">
           <Sheet>

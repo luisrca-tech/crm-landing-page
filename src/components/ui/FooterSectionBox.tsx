@@ -1,13 +1,17 @@
 import { type ReactNode } from 'react';
-
 interface FooterSectionBoxProps {
   children: ReactNode;
+  hasDifferentPadding?: boolean;
 }
-
-export function FooterSectionBox({ children }: FooterSectionBoxProps) {
+export function FooterSectionBox({
+  children,
+  hasDifferentPadding
+}: FooterSectionBoxProps) {
   return (
     <div className="w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1">
-      <div className="flex h-full w-full flex-col gap-4 rounded-3xl border border-base-dark-500 bg-base-dark-600 p-10 px-7">
+      <div
+        className={`flex h-full w-full flex-col gap-4 rounded-3xl border border-base-dark-500 bg-base-dark-600 ${hasDifferentPadding ? 'p-6' : 'p-10 px-7'}`}
+      >
         {children}
       </div>
     </div>

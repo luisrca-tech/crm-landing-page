@@ -1,5 +1,5 @@
 import { Container } from '~/components/Container';
-import FooterPage from './FooterSection/page';
+import { MuchMore } from '~/components/blocks/MuchMore';
 
 export default function HomePage() {
   return (
@@ -7,7 +7,11 @@ export default function HomePage() {
       <Container>
         <h1>CRM - LANDING PAGE</h1>
       </Container>
-      <FooterPage />
+      <div className="min-h-screen bg-base-600">
+        <Container hasBgBlack>
+          <MuchMore />
+        </Container>
+      </div>
     </>
   );
 }

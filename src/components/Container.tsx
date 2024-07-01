@@ -1,14 +1,15 @@
 import { ReactNode } from 'react';
+import { cn } from '~/lib/utils';
 
 interface ContainerProps {
   children: ReactNode;
-  hasBgBlack?: boolean;
+  className?: string;
 }
 
-export function Container({ children, hasBgBlack }: ContainerProps) {
+export function Container({ children, className }: ContainerProps) {
   return (
     <div
-      className={`m-auto ${hasBgBlack ? 'bg-base-600' : 'bg-base-100'} max-w-screen-2xl px-6 lg:px-8 3xl:px-0`}
+      className={cn('m-auto max-w-screen-2xl px-6 lg:px-8 3xl:px-0', className)}
     >
       {children}
     </div>

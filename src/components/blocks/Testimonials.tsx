@@ -1,18 +1,18 @@
 import Image, { StaticImageData } from 'next/image';
-interface FeedbacksProps {
+interface TestimonialsProps {
   Avatar: StaticImageData;
   alt: string;
   description: string;
   name: string;
   role: string;
 }
-export function Feedbacks({
+export function Testimonials({
   Avatar,
   alt,
   description,
   name,
   role
-}: FeedbacksProps) {
+}: TestimonialsProps) {
   return (
     <>
       <div className="mt-10 flex flex-col items-start justify-start gap-6">

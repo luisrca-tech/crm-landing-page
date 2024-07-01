@@ -10,7 +10,7 @@ import Avatar from '../../../public/images/FourthAvatar.png';
 
 import { HeaderSection } from './HeaderSection';
 import { BoxSection } from './BoxSection';
-import { Feedbacks } from './Feedbacks';
+import { Testimonials } from './Testimonials';
 
 export function MadeForTeam() {
   return (
@@ -103,7 +103,7 @@ export function MadeForTeam() {
           </div>
         </BoxSection>
       </div>
-      <Feedbacks
+      <Testimonials
         Avatar={Avatar}
         alt="Avatar de um homem vestido de preto"
         description="“Attio fez uma mudança crucial em escalar, construindo um novo modelo de markerting e vendas. Permitindo minha equipe a facilmente estar no topo de tudo!”"

@@ -6,7 +6,6 @@ import Menu from '/public/images/menu.svg';
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetOverlay,

@@ -35,12 +35,12 @@ export function CreatedForYou() {
   );
 }
 
-export function CreatedForYouAndBoxline() {
+export function CreatedForYouWithBoxline() {
   return (
       <div className="relative flex h-full w-full gap-3 mt-14">
         <div className="flex h-full w-[2.125rem] flex-col items-center justify-center">
           <Image
-            className="absolute -left-3 top-1 z-10 lg:left-0 lg:top-0"
+            className="absolute -left-3 top-0 z-10 lg:left-0 lg:top-3"
             src={Box}
             alt="Icone de caixa tridimensional"
           />

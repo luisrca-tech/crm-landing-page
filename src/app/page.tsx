@@ -1,4 +1,4 @@
-import { CreatedForYouAndBoxline } from '~/components/blocks/CreatedForYouSection/CreatedForYou';
+import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSection/CreatedForYou';
 import { Hero } from '~/components/blocks/Hero';
 import { Container } from '~/components/ui/Container';
 
@@ -7,7 +7,7 @@ export default function HomePage() {
     <main>
       <Container>
         <Hero />
-        <CreatedForYouAndBoxline />
+        <CreatedForYouWithBoxline />
       </Container>
     </main>
   );

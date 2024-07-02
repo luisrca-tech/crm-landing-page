@@ -1,4 +1,4 @@
-import { CreatedForYouAndBoxline } from '~/components/blocks/CreatedForYouAndBoxline';
+import { CreatedForYouAndBoxline } from '~/components/blocks/CreatedForYou';
 import { Hero } from '~/components/blocks/Hero';
 import { Container } from '~/components/ui/Container';
 

@@ -35,13 +35,13 @@ export function FeaturesBox() {
                     alt={item.altIcon}
                   />
                   <h2
-                    className={`text-lg font-medium leading-[1.625rem] tracking-tight ${selectedItem === item.id ? 'text-base-600' : 'text-base-300'}`}
+                    className={`text-lg leading-[1.625rem] tracking-tight ${selectedItem === item.id ? 'font-bold text-base-600' : 'font-medium text-base-300'}`}
                   >
                     {item.title}
                   </h2>
                 </div>
                 <span
-                  className={`text-base font-medium leading-6 tracking-tight ${selectedItem === item.id ? 'text-base-600' : 'text-base-300'}`}
+                  className={`text-base leading-6 tracking-tight ${selectedItem === item.id ? 'font-bold text-base-600' : 'font-medium text-base-300'}`}
                 >
                   {item.description}
                 </span>

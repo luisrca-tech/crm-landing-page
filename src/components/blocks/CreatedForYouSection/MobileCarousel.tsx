@@ -48,18 +48,12 @@ export function MobileCarousel() {
         })}
       </CarouselContent>
       <div className="flex h-[3.25rem] items-center justify-center gap-2 px-6">
-        <div
-          className={`h-1 w-[1.375rem] rounded-sm ${activeIndex === 0 ? 'bg-base-300' : 'bg-base-200'}`}
-        ></div>
-        <div
-          className={`h-1 w-[1.375rem] rounded-sm ${activeIndex === 1 ? 'bg-base-300' : 'bg-base-200'}`}
-        ></div>
-        <div
-          className={`h-1 w-[1.375rem] rounded-sm ${activeIndex === 2 ? 'bg-base-300' : 'bg-base-200'}`}
-        ></div>
-        <div
-          className={`h-1 w-[1.375rem] rounded-sm ${activeIndex === 3 ? 'bg-base-300' : 'bg-base-200'}`}
-        ></div>
+        {CarouselItems.map((_, index) => (
+          <div
+            key={index}
+            className={`h-1 w-[1.375rem] rounded-sm ${activeIndex === index ? 'bg-base-300' : 'bg-base-200'}`}
+          ></div>
+        ))}
       </div>
     </Carousel>
   );

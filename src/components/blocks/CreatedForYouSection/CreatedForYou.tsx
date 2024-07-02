@@ -37,16 +37,16 @@ export function CreatedForYou() {
 
 export function CreatedForYouWithBoxline() {
   return (
-      <div className="relative flex h-full w-full gap-3 mt-14">
-        <div className="flex h-full w-[2.125rem] flex-col items-center justify-center">
-          <Image
-            className="absolute -left-3 top-0 z-10 lg:left-0 lg:top-3"
-            src={Box}
-            alt="Icone de caixa tridimensional"
-          />
-          <div className="absolute left-1 top-0 h-full w-[0.09375rem] rounded-lg bg-gradient-to-b from-[rgba(255,255,255,1)] via-[rgba(217,217,217,0.8)] to-[rgba(255,255,255,1)] lg:left-4"></div>
-        </div>
-        <CreatedForYou />
+    <div className="relative mt-[3.75rem] flex lg:mt-[6.625rem] lg:gap-6">
+      <div className="w-full max-w-[2.125rem]">
+        <Image
+          className="absolute -left-3 top-1 z-10 lg:left-0 lg:top-3"
+          src={Box}
+          alt="Icone de caixa tridimensional"
+        />
+        <div className="absolute left-1 top-0 h-full w-[0.09375rem] rounded-lg bg-gradient-to-b from-[rgba(255,255,255,1)] via-[rgba(217,217,217,0.8)] to-[rgba(255,255,255,1)] lg:left-4"></div>
       </div>
+      <CreatedForYou />
+    </div>
   );
 }

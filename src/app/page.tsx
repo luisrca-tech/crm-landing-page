@@ -1,4 +1,4 @@
-import { CreatedForYouAndBoxline } from '~/components/blocks/CreatedForYou';
+import { CreatedForYouAndBoxline } from '~/components/blocks/CreatedForYouSection/CreatedForYou';
 import { Hero } from '~/components/blocks/Hero';
 import { Container } from '~/components/ui/Container';
 
@@ -6,11 +6,8 @@ export default function HomePage() {
   return (
     <main>
       <Container>
-        <h1>CRM - LANDING PAGE</h1>
         <Hero />
-        <div className="flex">
-          <CreatedForYouAndBoxline />
-        </div>
+        <CreatedForYouAndBoxline />
       </Container>
     </main>
   );

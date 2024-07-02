@@ -10,6 +10,10 @@ import Construct from '../../public/images/Construct.png';
 import Refine from '../../public/images/Refine.png';
 import Work from '../../public/images/Work.png';
 
+// Images desktop
+import ConstructDesktop from '../../public/images/ConstructDesktop.png';
+import RefineDesktop from '../../public/images/RefineDesktop.png';
+
 interface CarouselItemsProps {
   id: string;
   icon: StaticImageData;
@@ -17,6 +21,7 @@ interface CarouselItemsProps {
   title: string;
   description: string;
   image: StaticImageData;
+  imageDesktop?: StaticImageData;
   alt: string;
 }
 
@@ -29,6 +34,7 @@ export const CarouselItems: CarouselItemsProps[] = [
     description:
       'Crie o CRM dos seus sonhos com poderosos e flexiveis templates para cada caso',
     image: Construct,
+    imageDesktop: ConstructDesktop,
     alt: 'Imagem de um quadro de tarefas'
   },
   {
@@ -39,6 +45,7 @@ export const CarouselItems: CarouselItemsProps[] = [
     description:
       'Use a interface intuitiva do Attio e blocos ultrapersonalizáveis ​​para criar seus fluxos de trabalhoideais.',
     image: Refine,
+    imageDesktop: RefineDesktop,
     alt: 'Imagem de um fluxograma'
   },
   {
@@ -49,6 +56,7 @@ export const CarouselItems: CarouselItemsProps[] = [
     description:
       'Colabore com sua equipe em tempo real para criar o CRM perfeito para o seu negócio',
     image: Work,
+    imageDesktop: ConstructDesktop,
     alt: 'Imagem de um quadro com o ranking de tarefas'
   },
   {
@@ -59,6 +67,7 @@ export const CarouselItems: CarouselItemsProps[] = [
     description:
       'Comece com um CRM tão flexível quanto você. Nenhum código é necessário',
     image: Work,
+    imageDesktop: RefineDesktop,
     alt: 'Imagem de um quadro com o ranking de tarefas'
   }
 ];

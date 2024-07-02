@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Avatar from '../../../../public/images/FristAvatar.png';
 import Box from '../../../../public/images/Box.png';
 
-import { MobileCarousel } from './MobileCarousel';
+import { MobileCarousel } from './Carousel';
 import { FeaturesBox } from './FeaturesBox';
 import { HeaderSection } from '../HeaderSection';
 import { Testimonials } from '../Testimonials';

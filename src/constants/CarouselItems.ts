@@ -1,18 +1,18 @@
 import { type StaticImageData } from 'next/image';
 
 // Icons
-import Grid from '../../public/images/Grid.png';
-import Shiny from '../../public/images/Shiny.png';
-import Chart from '../../public/images/Chart.png';
+import Grid from '/public/images/Grid.png';
+import Shiny from '/public/images/Shiny.png';
+import Chart from '/public/images/Chart.png';
 
 // Images
-import Construct from '../../public/images/Construct.png';
-import Refine from '../../public/images/Refine.png';
-import Work from '../../public/images/Work.png';
+import Construct from '/public/images/Construct.png';
+import Refine from '/public/images/Refine.png';
+import Work from '/public/images/Work.png';
 
 // Images desktop
-import ConstructDesktop from '../../public/images/ConstructDesktop.png';
-import RefineDesktop from '../../public/images/RefineDesktop.png';
+import ConstructDesktop from '/public/images/ConstructDesktop.png';
+import RefineDesktop from '/public/images/RefineDesktop.png';
 
 interface CarouselItemsProps {
   id: string;

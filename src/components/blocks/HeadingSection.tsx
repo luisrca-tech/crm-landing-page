@@ -3,7 +3,7 @@ interface HeaderSectionProps {
   description: string;
 }
 
-export function HeaderSection({ title, description }: HeaderSectionProps) {
+export function HeadingSection({ title, description }: HeaderSectionProps) {
   return (
     <div className="flex flex-col gap-4">
       <h1 className="flex font-opensans text-[2rem] font-bold italic leading-[2.375rem] tracking-[-0.5px] lg:max-w-[25rem] lg:text-[3.25rem] lg:leading-[3.625rem] lg:tracking-[-1.2px]">

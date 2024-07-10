@@ -1,29 +1,29 @@
 import Image from 'next/image';
 
-import Avatar from '../../../../public/images/FristAvatar.png';
-import Box from '../../../../public/images/Box.png';
+import Avatar from '/public/images/FristAvatar.png';
+import Box from '/public/images/Box.png';
 
-import { MobileCarousel } from './Carousel';
-import { FeaturesBox } from './FeaturesBox';
-import { HeaderSection } from '../HeaderSection';
+import { MobileCarousel } from './components/MobileCarousel';
+import { FeaturesBox } from './components/FeaturesBox';
 import { Testimonials } from '../Testimonials';
+import { HeadingSection } from '../HeadingSection';
 
 export function CreatedForYou() {
   return (
     <section className="flex w-full flex-col gap-16">
-      <HeaderSection
+      <HeadingSection
         title="O CRM criado para ser seu!"
         description="Mova qualquer coisa e garanta que tudo esta de acordo com as necessidades do seu negócios, não o contrário!"
       />
-      <div className="lg:hidden">
+      <div className="md:hidden lg:hidden">
         <MobileCarousel />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block md:block">
         <FeaturesBox />
       </div>
       <Testimonials
         Avatar={Avatar}
-        alt='Mulher morena de cabelo preto em um fundo preto'
+        alt="Mulher morena de cabelo preto em um fundo preto"
         description="“Minha equipe ama trabalhar com os relatórios do Attio porque são muito dinamicos.”"
         name="John Doe"
         role="Founder"

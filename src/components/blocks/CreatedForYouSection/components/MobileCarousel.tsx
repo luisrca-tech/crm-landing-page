@@ -16,7 +16,7 @@ export function MobileCarousel() {
   const activeIndex = useActiveIndex(api);
 
   return (
-    <Carousel setApi={setApi}>
+    <Carousel setApi={setApi} >
       <CarouselContent className="w-[17.6875rem] gap-4">
         {CarouselItems.map((item) => {
           return (
@@ -29,11 +29,11 @@ export function MobileCarousel() {
                       src={item.icon}
                       alt={item.altIcon}
                     />
-                    <h2 className="text-lg font-medium leading-[1.625rem] tracking-tight text-base-600">
+                    <h2 className="text-lg font-semibold leading-[1.625rem] tracking-tight text-base-600">
                       {item.title}
                     </h2>
                   </div>
-                  <span className="text-base font-medium leading-6 tracking-tight text-base-600">
+                  <span className="text-base font-semibold leading-6 tracking-tight text-[#1D1F20]">
                     {item.description}
                   </span>
                 </div>
@@ -47,7 +47,7 @@ export function MobileCarousel() {
           );
         })}
       </CarouselContent>
-      <div className="flex h-[3.25rem] items-center justify-center gap-2 px-6">
+      <div className="flex h-[3.25rem] items-center justify-center gap-2 px-6 md:hidden">
         {CarouselItems.map((_, index) => (
           <div
             key={index}

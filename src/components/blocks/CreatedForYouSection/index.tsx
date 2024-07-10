@@ -37,7 +37,7 @@ export function CreatedForYou() {
 
 export function CreatedForYouWithBoxline() {
   return (
-    <div className="relative mt-[3.75rem] flex lg:mt-[6.625rem] lg:gap-6">
+    <div className="relative mt-[3.75rem] flex gap-6 lg:mt-[6.625rem]">
       <div className="w-full max-w-[2.125rem]">
         <Image
           className="absolute -left-3 top-1 z-10 lg:left-0 lg:top-3"

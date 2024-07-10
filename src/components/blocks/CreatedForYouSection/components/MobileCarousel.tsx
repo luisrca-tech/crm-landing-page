@@ -10,20 +10,21 @@ import {
   useActiveIndex
 } from '~/components/ui/carousel';
 import { CarouselItems } from '~/constants/CarouselItems';
+import { SectionsBoxes } from '../../SectionsBoxes';
 
 export function MobileCarousel() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const activeIndex = useActiveIndex(api);
 
   return (
-    <Carousel setApi={setApi} >
-      <CarouselContent className="w-[17.6875rem] gap-4">
+    <Carousel setApi={setApi}>
+      <CarouselContent className="justify-between">
         {CarouselItems.map((item) => {
           return (
-            <CarouselItem key={item.id}>
-              <div className="relative flex h-[22.2rem] w-[18.2rem] flex-col items-center justify-center rounded-[1.25rem] border-base-200 bg-base-dark-100">
-                <div className="flex h-[21.8rem] w-[17.6875rem] flex-col gap-3 rounded-[1.25rem] border border-base-dark-200 bg-base-100 p-6">
-                  <div className="flex items-center gap-[0.375rem]">
+            <CarouselItem key={item.id} className="pr-6">
+              <SectionsBoxes className="h-[23rem]">
+                <div className="flex flex-col gap-3 p-6">
+                  <div className="flex items-center gap-3">
                     <Image
                       className="h-[1.125rem] w-[1.125rem]"
                       src={item.icon}
@@ -33,16 +34,20 @@ export function MobileCarousel() {
                       {item.title}
                     </h2>
                   </div>
-                  <span className="text-base font-semibold leading-6 tracking-tight text-[#1D1F20]">
+                  <span className="text-lg font-semibold leading-6 tracking-tight text-base-600">
                     {item.description}
                   </span>
                 </div>
-                <div className="absolute bottom-1 right-1 w-[16rem] overflow-hidden rounded-lg border-[0.0225rem] border-base-dark-100 bg-blue-100">
-                  <div className="h-[11rem] w-full overflow-hidden rounded-lg bg-[#F9F9FB]">
-                    <Image className="w-full" src={item.image} alt={item.alt} />
+                <div className="mb-auto ml-6 w-full rounded-lg border-[0.0225rem] border-base-dark-100 bg-blue-100">
+                  <div className="rounded-lg bg-[#F9F9FB]">
+                    <Image
+                      className="w-full object-cover"
+                      src={item.image}
+                      alt={item.alt}
+                    />
                   </div>
                 </div>
-              </div>
+              </SectionsBoxes>
             </CarouselItem>
           );
         })}

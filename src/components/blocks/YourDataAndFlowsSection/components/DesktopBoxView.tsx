@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import Workspaces from '../../../../public/images/WorkspacesDesktop.png';
-import Fluxo from '../../../../public/images/FluxoDesktop.png';
-import Object from '../../../../public/images/ObjectDesktop.png';
+import Workspaces from '/public/images/WorkspacesDesktop.png';
+import Fluxo from '/public/images/FluxoDesktop.png';
+import Object from '/public/images/ObjectDesktop.png';
 
 import { BoxSection } from '../../BoxSection';
 import { BoxToolsImages } from '~/constants/BoxToolImages';
@@ -34,7 +34,7 @@ export function DesktopBoxView() {
       <div className="flex gap-7">
         <BoxSection className="flex-1">
           <div className="flex flex-col gap-20 pt-10">
-            <div className="max-w-[29rem] pl-10 text-lg">
+            <div className="max-w-[29rem] pl-10 pr-1 text-lg">
               <h2 className="font-normal">
                 <span className="font-semibold">
                   Um CRM para qualquer caso.

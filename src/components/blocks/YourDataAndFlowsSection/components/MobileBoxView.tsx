@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import Workspaces from '../../../../public/images/Workspaces.png';
-import Fluxo from '../../../../public/images/Fluxo.png';
-import Object from '../../../../public/images/Object.png';
+import Workspaces from '/public/images/Workspaces.png';
+import Fluxo from '/public/images/Fluxo.png';
+import Object from '/public/images/Object.png';
 
 import { BoxSection } from '../../BoxSection';
 import { BoxToolsImages } from '~/constants/BoxToolImages';

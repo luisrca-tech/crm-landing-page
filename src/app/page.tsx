@@ -3,11 +3,12 @@ import { DataAndFlowsWithBoxline } from '~/components/blocks/YourDataAndFlowsSec
 
 export default function HomePage() {
   return (
-    <Container>
-      <h1>CRM - LANDING PAGE</h1>
+    <main>
       <section>
-        <DataAndFlowsWithBoxline />
+        <Container>
+          <DataAndFlowsWithBoxline />
+        </Container>
       </section>
-    </Container>
+    </main>
   );
 }

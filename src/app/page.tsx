@@ -1,5 +1,5 @@
 import { Container } from '~/components/Container';
-import { MuchMore } from '~/components/blocks/MuchMore';
+import { AndMuchMore } from '~/components/blocks/AndMuchMoreSection';
 
 export default function HomePage() {
   return (
@@ -9,7 +9,7 @@ export default function HomePage() {
       </Container>
       <div className="min-h-screen bg-base-600">
         <Container>
-          <MuchMore />
+          <AndMuchMore />
         </Container>
       </div>
     </>

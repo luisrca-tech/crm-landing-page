@@ -3,9 +3,12 @@ import { MadeForTeamWithBoxLine } from '~/components/blocks/MadeForTeamSection';
 
 export default function HomePage() {
   return (
-    <Container>
-      <h1>CRM - LANDING PAGE</h1>
-      <MadeForTeamWithBoxLine />
-    </Container>
+    <main>
+      <Container>
+        <section>
+          <MadeForTeamWithBoxLine />
+        </section>
+      </Container>
+    </main>
   );
 }

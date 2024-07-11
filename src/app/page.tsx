@@ -7,7 +7,7 @@ export default function HomePage() {
       <Container>
         <h1>CRM - LANDING PAGE</h1>
       </Container>
-      <div className="bg-base-600">
+      <div className="bg-base-dark-600">
         <Container>
           <section>
             <LovedByEnterprising />

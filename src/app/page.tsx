@@ -1,17 +1,19 @@
 import { Container } from '~/components/Container';
-import { LovedBy } from '~/components/blocks/LovedBy';
+import { LovedByEnterprising } from '~/components/blocks/LovedByEnterprisingSection';
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <Container>
         <h1>CRM - LANDING PAGE</h1>
       </Container>
       <div className="bg-base-600">
         <Container>
-          <LovedBy />
+          <section>
+            <LovedByEnterprising />
+          </section>
         </Container>
       </div>
-    </>
+    </main>
   );
 }

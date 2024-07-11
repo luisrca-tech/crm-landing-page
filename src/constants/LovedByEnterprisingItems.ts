@@ -7,7 +7,7 @@ import Khrisna from '../../public/images/Khrisna.png';
 import VillaGouse from '../../public/images/VillaGouse.png';
 import Damian from '../../public/images/Damian.png';
 
-interface LovedByItemsProps {
+interface LovedByEnterprisingItemsProps {
   id: string;
   Avatar: StaticImageData;
   name: string;
@@ -16,7 +16,7 @@ interface LovedByItemsProps {
   publishedAt: string;
 }
 
-export const LovedByItems: LovedByItemsProps[] = [
+export const LovedByEnterprisingItems: LovedByEnterprisingItemsProps[] = [
   {
     id: '1',
     Avatar: Sebastian,

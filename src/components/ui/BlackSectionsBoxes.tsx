@@ -1,12 +1,12 @@
 import { type ReactNode } from 'react';
-interface FooterSectionBoxProps {
+interface BlackSectionsBoxesProps {
   children: ReactNode;
   hasDifferentPadding?: boolean;
 }
-export function FooterSectionBox({
+export function BlackSectionsBoxesBox({
   children,
   hasDifferentPadding
-}: FooterSectionBoxProps) {
+}: BlackSectionsBoxesProps) {
   return (
     <div className="w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1">
       <div

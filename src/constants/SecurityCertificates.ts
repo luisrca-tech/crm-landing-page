@@ -1,9 +1,9 @@
 import { type StaticImageData } from "next/image"
 
-import GDPR from '../../public/images/GDPR.png'
-import CCPA from '../../public/images/CCPA.png'
-import LR from '../../public/images/LR.png'
-import Ukas from '../../public/images/Ukas.png'
+import GDPR from '/public/images/GDPR.png'
+import CCPA from '/public/images/CCPA.png'
+import LR from '/public/images/LR.png'
+import Ukas from '/public/images/Ukas.png'
 
 interface SecurityCertificatesProps {
   id: string;

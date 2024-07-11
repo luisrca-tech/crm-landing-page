@@ -4,7 +4,7 @@ import { AndMuchMore } from '~/components/blocks/AndMuchMoreSection';
 export default function HomePage() {
   return (
     <main>
-        <div className="min-h-screen bg-base-600">
+        <div className=" bg-base-600">
           <Container>
             <AndMuchMore />
           </Container>

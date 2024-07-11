@@ -4,9 +4,6 @@ import { LovedByEnterprising } from '~/components/blocks/LovedByEnterprisingSect
 export default function HomePage() {
   return (
     <main>
-      <Container>
-        <h1>CRM - LANDING PAGE</h1>
-      </Container>
       <div className="bg-base-dark-600">
         <Container>
           <section>

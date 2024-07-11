@@ -1,10 +1,18 @@
 import { type Config } from 'tailwindcss';
 
 export default {
-  content: ['./src/**/*.tsx'],
+  darkMode: ['class'],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}'
+  ],
+  prefix: '',
   theme: {
     extend: {
       screens: {
+        xsm: '30rem',
         '2xl': '87.5rem',
         '3xl': '100rem'
       }

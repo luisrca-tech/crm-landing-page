@@ -10,14 +10,14 @@ import {
   useActiveIndex
 } from '~/components/ui/carousel';
 import { CarouselItems } from '~/constants/CarouselItems';
-import { SectionsBoxes } from '../../SectionsBoxes';
+import { SectionsBoxes } from '../SectionsBoxes';
 
 export function MobileCarousel() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const activeIndex = useActiveIndex(api);
 
   return (
-    <Carousel setApi={setApi}>
+    <Carousel className='lg:hidden md:hidden' setApi={setApi}>
       <CarouselContent className="justify-between">
         {CarouselItems.map((item) => {
           return (

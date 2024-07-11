@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Avatar from '/public/images/FristAvatar.png';
 import Box from '/public/images/Box.png';
 
-import { MobileCarousel } from './components/MobileCarousel';
-import { FeaturesBox } from './components/FeaturesBox';
+import { FeaturesBox } from './FeaturesBox';
 import { Testimonials } from '../Testimonials';
 import { HeadingSection } from '../HeadingSection';
+import { MobileCarousel } from './MobileCarousel';
 
 export function CreatedForYou() {
   return (
@@ -15,12 +15,8 @@ export function CreatedForYou() {
         title="O CRM criado para ser seu!"
         description="Mova qualquer coisa e garanta que tudo esta de acordo com as necessidades do seu negócios, não o contrário!"
       />
-      <div className="md:hidden lg:hidden">
-        <MobileCarousel />
-      </div>
-      <div className="hidden lg:block md:block">
-        <FeaturesBox />
-      </div>
+      <MobileCarousel />
+      <FeaturesBox />
       <Testimonials
         Avatar={Avatar}
         alt="Mulher morena de cabelo preto em um fundo preto"

@@ -18,7 +18,7 @@ export function FeaturesBox() {
   );
 
   return (
-    <div className="w-full rounded-[20px] bg-base-dark-100 p-1">
+    <div className="hidden w-full rounded-[20px] bg-base-dark-100 p-1 md:block lg:block">
       <div className="flex w-full flex-col gap-16 rounded-[20px] border border-base-200 bg-base-100 px-10 pb-0 pt-6">
         <div className="flex gap-6">
           {CarouselItems.map((item) => (
@@ -35,13 +35,13 @@ export function FeaturesBox() {
                     alt={item.altIcon}
                   />
                   <h2
-                    className={`text-lg leading-[1.625rem] tracking-tight ${selectedItem === item.id ? 'font-bold text-base-600' : 'font-medium text-base-300'}`}
+                    className={`text-lg leading-[1.625rem] tracking-tight ${selectedItem === item.id ? 'font-semibold text-[#1D1F20]' : 'font-medium text-base-300'}`}
                   >
                     {item.title}
                   </h2>
                 </div>
                 <span
-                  className={`text-base leading-6 tracking-tight ${selectedItem === item.id ? 'font-bold text-base-600' : 'font-medium text-base-300'}`}
+                  className={`text-base leading-6 tracking-tight ${selectedItem === item.id ? 'font-semibold text-[#1D1F20]' : 'font-medium text-base-300'}`}
                 >
                   {item.description}
                 </span>

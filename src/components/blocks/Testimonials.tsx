@@ -22,7 +22,7 @@ export function Testimonials({
   roleDesktop
 }: TestimonialsProps) {
   return (
-    <div className="flex flex-col items-start justify-start gap-6 lg:items-center">
+    <div className="flex flex-col items-start justify-start gap-6 lg:items-center lg:text-center">
       <Image src={Avatar} width={44} height={44} alt={alt} />
       <h3 className="text-lg font-normal leading-[1.625rem] tracking-tight text-base-600 lg:hidden">
         {description}

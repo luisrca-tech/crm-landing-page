@@ -10,7 +10,7 @@ import { SectionsBoxes } from '../SectionsBoxes';
 export function DesktopSectionView() {
   return (
     <div className="mt-9 hidden w-full flex-col gap-7 md:flex lg:flex">
-      <div className="flex gap-7 md:flex-col lg:flex-row">
+      <div className="flex max-h-[579px] gap-7 md:max-h-none md:flex-col lg:flex-row">
         <SectionsBoxes internalClassName="flex flex-col justify-between md:gap-10">
           <div className="flex pl-10 pr-[4.625rem] pt-10">
             <h2 className="max-w-[30.75rem] text-lg font-normal tracking-[-0.2px] text-base-600">
@@ -39,7 +39,7 @@ export function DesktopSectionView() {
               comprometer seu fluxo de trabalho.
             </h2>
           </div>
-          <div className="mx-[8.25rem]">
+          <div className="lg:mx-[8.25rem] md:mx-44">
             <Image
               className="w-full object-cover"
               src={Iphone}
@@ -48,7 +48,7 @@ export function DesktopSectionView() {
           </div>
         </SectionsBoxes>
       </div>
-      <div className="flex gap-7 md:flex-col lg:flex-row">
+      <div className="flex lg:max-h-[552px] gap-7 md:max-h-none md:flex-col lg:flex-row">
         <SectionsBoxes rootClassName="flex-1 max-w-[25.9375rem] md:max-w-none">
           <div className="flex p-10">
             <h2 className="text-lg font-normal tracking-[-0.2px] text-base-600 md:max-w-[24rem] ">
@@ -66,7 +66,7 @@ export function DesktopSectionView() {
           />
         </SectionsBoxes>
         <SectionsBoxes
-          rootClassName="flex-3 max-w-[45.625rem]"
+          rootClassName="flex-3 lg:max-w-[45.625rem] md:max-w-none"
           internalClassName="flex flex-col justify-between md:gap-10"
         >
           <div className="flex pl-10 pr-5 pt-10">
@@ -76,7 +76,7 @@ export function DesktopSectionView() {
               do Attio os colaboradores podem manter suas notas.
             </h2>
           </div>
-          <SectionsBoxes rootClassName="max-w-[37.625rem] ml-[5.625rem] md:ml-[2.5rem]">
+          <SectionsBoxes rootClassName="lg:max-w-[37.625rem] lg:ml-[5.625rem] md:max-w-none md:ml-6">
             <Image
               className=" w-full object-cover"
               src={DiscoveryCallDesktop}

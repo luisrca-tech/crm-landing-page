@@ -13,16 +13,16 @@ export default function HomePage() {
         </Container>
         <HeroImage />
       </section>
-      <Container>
-        <section>
+      <section className="mb-20">
+        <Container>
           <CreatedForYouWithBoxline />
-        </section>
-      </Container>
-      <div className=" bg-blue-600">
-        <Container className="bg-blue-600">
+        </Container>
+      </section>
+      <section className="bg-blue-600">
+        <Container>
           <ReadyToBuildYourCrm />
         </Container>
-      </div>
+      </section>
     </main>
   );
 }

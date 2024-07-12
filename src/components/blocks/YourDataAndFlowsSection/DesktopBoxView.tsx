@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Workspaces from '/public/images/WorkspacesDesktop.png';
 import Fluxo from '/public/images/FluxoDesktop.png';
 
-import { BoxSection } from '../../BoxSection';
+import { BoxSection } from '../BoxSection';
 import { BoxToolsImages } from '~/constants/BoxToolImages';
 
 export function DesktopBoxView() {

@@ -6,9 +6,9 @@ import Avatar from '/public/images/SecondAvatar.png';
 import { Testimonials } from '../Testimonials';
 
 import Box from '/public/images/Box.png';
-import { MobileBoxView } from './components/MobileBoxView';
-import { DesktopBoxView } from './components/DesktopBoxView';
+import { DesktopBoxView } from './DesktopBoxView';
 import { HeadingSection } from '../HeadingSection';
+import { MobileBoxView } from './MobileBoxView';
 
 export function YourDataAndFlows() {
   return (

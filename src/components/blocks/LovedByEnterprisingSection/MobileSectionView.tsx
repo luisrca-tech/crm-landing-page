@@ -17,7 +17,7 @@ export function MobileSectionView() {
 
   return (
     <div
-      className={`relative mt-[60px] flex flex-col gap-6 ${isExpanded ? 'max-h-none' : 'max-h-[30rem]'} overflow-hidden lg:hidden`}
+      className={`relative mt-[3.75rem] flex flex-col gap-6 ${isExpanded ? 'max-h-none' : 'max-h-[30rem]'} overflow-hidden lg:hidden`}
     >
       {LovedByEnterprisingItems.map((item) => {
         return (

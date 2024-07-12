@@ -7,14 +7,13 @@ import { BlackSectionsBoxes } from '~/components/ui/BlackSectionsBoxes';
 
 export function DesktopSectionView() {
   return (
-    <div className="mt-[68px] hidden lg:flex">
-      <div className="flex flex-wrap gap-7 lg:justify-center 2xl:justify-start">
+    <div className="mt-[4.25rem] hidden lg:flex">
+      <div className="flex flex-wrap lg:justify-center 2xl:justify-start gap-7">
         {LovedByEnterprisingItems.map((item) => {
           return (
             <BlackSectionsBoxes
               key={item.id}
-              rootClassName="2xl:max-w-[401px] lg:max-w-[301px]"
-              InternalclassName="p-10 px-7 h-auto"
+              rootClassName="2xl:max-w-[25.0625rem] lg:max-w-[18.8125rem]"
             >
               <div className="h- flex flex-col gap-6">
                 <div className="flex justify-between">

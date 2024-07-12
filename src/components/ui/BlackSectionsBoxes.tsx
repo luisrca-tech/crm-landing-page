@@ -15,10 +15,9 @@ export function BlackSectionsBoxes({
   return (
     <div
       className={cn(
-        'w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1',
+        'w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1 h-fit',
         rootClassName
       )}
-      style={{ height: 'fit-content' }} // Add this line to set the height of the outer div
     >
       <div
         className={cn(

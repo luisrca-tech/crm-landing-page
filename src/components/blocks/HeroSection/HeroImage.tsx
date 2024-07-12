@@ -1,5 +1,5 @@
 import HeroImageData from '/public/images/Hero.png';
-import { Container } from '../Container';
+import { Container } from '../../Container';
 import Image, { StaticImageData } from 'next/image';
 
 export function HeroImage() {

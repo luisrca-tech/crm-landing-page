@@ -12,9 +12,23 @@ export default {
   theme: {
     extend: {
       screens: {
-         xsm: '30rem',
+        xsm: '30rem',
         '2xl': '87.5rem',
         '3xl': '100rem'
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' }
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' }
+        }
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out'
       }
     },
     colors: {
@@ -46,20 +60,6 @@ export default {
     fontFamily: {
       inter: ['var(--font-inter)'],
       opensans: ['var(--font-open_sans)']
-    },
-    keyframes: {
-      'accordion-down': {
-        from: { height: '0' },
-        to: { height: 'var(--radix-accordion-content-height)' }
-      },
-      'accordion-up': {
-        from: { height: 'var(--radix-accordion-content-height)' },
-        to: { height: '0' }
-      }
-    },
-    animation: {
-      'accordion-down': 'accordion-down 0.2s ease-out',
-      'accordion-up': 'accordion-up 0.2s ease-out'
     }
   },
   plugins: [require('tailwindcss-animate')]

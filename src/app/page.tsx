@@ -1,7 +1,8 @@
+import { Container } from '~/components/Container';
 import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSection';
 import { Hero } from '~/components/blocks/Hero';
 import { HeroImage } from '~/components/blocks/HeroImage';
-import { Container } from '~/components/ui/Container';
+import { ReadyToBuildYourCrm } from '~/components/blocks/ReadyToBuildYourCrm';
 
 export default function HomePage() {
   return (
@@ -12,11 +13,16 @@ export default function HomePage() {
         </Container>
         <HeroImage />
       </section>
-      <Container>
-        <section>
+      <section className="mb-20">
+        <Container>
           <CreatedForYouWithBoxline />
-        </section>
-      </Container>
+        </Container>
+      </section>
+      <section className="bg-blue-600">
+        <Container>
+          <ReadyToBuildYourCrm />
+        </Container>
+      </section>
     </main>
   );
 }

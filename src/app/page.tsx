@@ -18,7 +18,7 @@ export default function HomePage() {
           <CreatedForYouWithBoxline />
         </section>
       </Container>
-      <div className="min-h-screen bg-blue-600">
+      <div className=" bg-blue-600">
         <Container className="bg-blue-600">
           <ReadyToBuildYourCrm />
         </Container>

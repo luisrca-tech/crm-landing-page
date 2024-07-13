@@ -12,7 +12,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        xsm: '30rem',
+         xsm: '30rem',
         '2xl': '87.5rem',
         '3xl': '100rem'
       },

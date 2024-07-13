@@ -3,11 +3,11 @@
 import Image from 'next/image';
 
 import Avatar from '/public/images/SecondAvatar.png';
-import { Testimonials } from '../Testimonials';
+import { Testimonials } from '../../ui/Testimonials';
 
 import Box from '/public/images/Box.png';
 import { DesktopBoxView } from './DesktopBoxView';
-import { HeadingSection } from '../HeadingSection';
+import { HeadingSection } from '../../ui/HeadingSection';
 import { MobileBoxView } from './MobileBoxView';
 
 export function YourDataAndFlows() {
@@ -17,10 +17,10 @@ export function YourDataAndFlows() {
         title="Modele seus dados e fluxos."
         description="Um CRM precisa ir além de negociações. Attio é construído para qualquer processo de negócio."
       />
-      <div className="block lg:hidden">
+      <div className="block lg:hidden md:hidden">
         <MobileBoxView />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden lg:block md:block">
         <DesktopBoxView />
       </div>
       <Testimonials

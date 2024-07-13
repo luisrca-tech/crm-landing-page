@@ -5,12 +5,12 @@ import Fluxo from '/public/images/Fluxo.png';
 import Object from '/public/images/Object.png';
 
 import { BoxToolsImages } from '~/constants/BoxToolImages';
-import { BoxSection } from '../BoxSection';
+import { SectionsBoxes } from '../../ui/SectionsBoxes';
 
 export function MobileBoxView() {
   return (
     <div className="mt-9 flex flex-col gap-7 lg:flex-row">
-      <BoxSection>
+      <SectionsBoxes>
         <div className="flex p-6 text-base font-normal tracking-[-0.2px]">
           <h2 className="flex flex-col gap-1 text-lg ">
             <span className="font-semibold">
@@ -29,8 +29,8 @@ export function MobileBoxView() {
             height={347.25}
           />
         </div>
-      </BoxSection>
-      <BoxSection>
+      </SectionsBoxes>
+      <SectionsBoxes>
         <div className="flex p-6 text-base font-normal tracking-[-0.2px]">
           <h2 className="flex flex-col gap-1 text-lg ">
             <span className="font-semibold">Um CRM para qualquer caso.</span>
@@ -50,8 +50,8 @@ export function MobileBoxView() {
             />
           </div>
         </div>
-      </BoxSection>
-      <BoxSection>
+      </SectionsBoxes>
+      <SectionsBoxes>
         <div className="rounded-[1.25rem] border-[0.0225rem] border-base-dark-100 bg-blue-100">
           <div className="h-full w-full overflow-hidden rounded-[1.25rem] bg-[#F9F9FB]">
             <Image
@@ -64,7 +64,7 @@ export function MobileBoxView() {
             />
           </div>
         </div>
-      </BoxSection>
+      </SectionsBoxes>
       <div className="flex h-[4.6875rem] w-full items-center justify-center rounded-[1.25rem] border-base-200 bg-base-dark-100 p-1">
         <div className="flex h-[4.1875rem] w-full items-center justify-center gap-[11.2px] rounded-[1.25rem] border border-base-dark-200 bg-base-100">
           {BoxToolsImages.map((box) => {

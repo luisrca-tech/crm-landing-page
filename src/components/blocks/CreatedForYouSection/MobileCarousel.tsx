@@ -9,20 +9,20 @@ import {
   CarouselItem,
   useActiveIndex
 } from '~/components/ui/carousel';
+import { SectionsBoxes } from '~/components/ui/SectionsBoxes';
 import { CarouselItems } from '~/constants/CarouselItems';
-import { SectionsBoxes } from '../SectionsBoxes';
 
 export function MobileCarousel() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const activeIndex = useActiveIndex(api);
 
   return (
-    <Carousel className='lg:hidden md:hidden' setApi={setApi}>
+    <Carousel className="md:hidden lg:hidden" setApi={setApi}>
       <CarouselContent className="justify-between">
         {CarouselItems.map((item) => {
           return (
             <CarouselItem key={item.id} className="pr-6">
-              <SectionsBoxes className="h-[23rem]">
+              <SectionsBoxes rootClassName="h-[23rem]">
                 <div className="flex flex-col gap-3 p-6">
                   <div className="flex items-center gap-3">
                     <Image

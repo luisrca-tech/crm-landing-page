@@ -4,9 +4,9 @@ import Avatar from '/public/images/FristAvatar.png';
 import Box from '/public/images/Box.png';
 
 import { FeaturesBox } from './FeaturesBox';
-import { Testimonials } from '../Testimonials';
-import { HeadingSection } from '../HeadingSection';
+import { Testimonials } from '../../ui/Testimonials';
 import { MobileCarousel } from './MobileCarousel';
+import { HeadingSection } from '~/components/ui/HeadingSection';
 
 export function CreatedForYou() {
   return (

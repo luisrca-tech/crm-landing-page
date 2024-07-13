@@ -1,6 +1,6 @@
 import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSection';
-import { Hero } from '~/components/blocks/Hero';
-import { HeroImage } from '~/components/blocks/HeroImage';
+import { Hero } from '~/components/blocks/HeroSection/Hero';
+import { HeroImage } from '~/components/blocks/HeroSection/HeroImage';
 import { LovedByEnterprising } from '~/components/blocks/LovedByEnterprisingSection';
 import { Container } from '~/components/ui/Container';
 

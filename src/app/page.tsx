@@ -21,9 +21,7 @@ export default function HomePage() {
       <div className="relative bg-base-600 lg:bg-base-dark-600">
         <div className="absolute bottom-24 hidden w-full border  border-base-400 lg:block"></div>
         <Container>
-          <footer>
-            <Footer />
-          </footer>
+          <Footer />
         </Container>
       </div>
     </main>

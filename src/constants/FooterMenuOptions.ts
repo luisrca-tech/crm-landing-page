@@ -1,10 +1,10 @@
-interface AccordionsItemsProps {
+interface FooterMenuOptionsProps {
   value: string;
   title: string;
   contents: string[];
 }
 
-export const AccordionsItems: AccordionsItemsProps[] = [
+export const FooterMenuOptions: FooterMenuOptionsProps[] = [
   {
     value: 'item-1',
     title: 'Produto',

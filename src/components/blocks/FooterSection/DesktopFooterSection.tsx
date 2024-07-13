@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { AccordionsItems } from '~/constants/AccordionsItems';
+import { FooterMenuOptions } from '~/constants/FooterMenuOptions';
 
 export function DesktopFooterSection() {
   return (
     <div className="hidden lg:flex">
       <div className="flex w-full justify-between">
-        {AccordionsItems.map((item) => {
+        {FooterMenuOptions.map((item) => {
           return (
             <div
               key={item.value}

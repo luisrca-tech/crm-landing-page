@@ -6,8 +6,8 @@ import { DesktopSectionView } from './DesktopSectionView';
 
 export function LovedByEnterprising() {
   return (
-    <div className="flex w-full flex-col">
-      <div className="flex flex-col gap-4 pt-10 lg:pt-20">
+    <div className="flex w-full flex-col pb-20">
+      <div className="flex flex-col gap-4 pt-10 lg:pt-32">
         <h2 className="text-center font-opensans text-[32px] italic leading-[38px] tracking-[-0.5px] text-base-100 md:text-[52px] md:leading-[58px] md:tracking-[-1.2px] lg:text-start lg:text-[52px] lg:leading-[58px] lg:tracking-[-1.2px]">
           <span className="text-base-300">Amados por</span> Empreendedores.
         </h2>

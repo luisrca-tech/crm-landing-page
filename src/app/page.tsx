@@ -2,7 +2,8 @@ import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSecti
 import { Hero } from '~/components/blocks/HeroSection/Hero';
 import { HeroImage } from '~/components/blocks/HeroSection/HeroImage';
 import { LovedByEnterprising } from '~/components/blocks/LovedByEnterprisingSection';
-import { Container } from '~/components/ui/Container';
+import { ReadyToBuildYourCrm } from '~/components/blocks/ReadyToBuildYourCrm';
+import { Container } from '~/components/Container';
 
 export default function HomePage() {
   return (
@@ -18,13 +19,16 @@ export default function HomePage() {
           <CreatedForYouWithBoxline />
         </section>
       </Container>
-      <div className="bg-base-600 lg:bg-base-dark-600">
+      <section className="bg-base-600 lg:bg-base-dark-600">
         <Container>
-          <section>
-            <LovedByEnterprising />
-          </section>
+          <LovedByEnterprising />
         </Container>
-      </div>
+      </section>
+      <section className="bg-blue-600">
+        <Container>
+          <ReadyToBuildYourCrm />
+        </Container>
+      </section>
     </main>
   );
 }

@@ -5,7 +5,7 @@ import Avatar from '/public/images/FourthAvatar.png';
 
 import { Testimonials } from '../Testimonials';
 import { HeadingSection } from '../HeadingSection';
-import { DesktopSectionView } from './desktest';
+import { DesktopSectionView } from './DesktopSectionView';
 import { MobileSectionView } from './MobileSectionView';
 
 export function MadeForTeam() {

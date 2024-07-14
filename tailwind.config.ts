@@ -1,3 +1,4 @@
+import { transform } from 'next/dist/build/swc';
 import { type Config } from 'tailwindcss';
 
 export default {
@@ -12,7 +13,7 @@ export default {
   theme: {
     extend: {
       screens: {
-         xsm: '30rem',
+        xsm: '30rem',
         '2xl': '87.5rem',
         '3xl': '100rem'
       }
@@ -41,6 +42,9 @@ export default {
         400: 'rgb(var(--blue-400) / <alpha-value>)',
         500: 'rgb(var(--blue-500) / <alpha-value>)',
         600: 'rgb(var(--blue-600) / <alpha-value>)'
+      },
+      error: {
+        100: 'rgb(var(--color-error-100) / <alpha-value>)'
       }
     },
     fontFamily: {
@@ -55,11 +59,16 @@ export default {
       'accordion-up': {
         from: { height: 'var(--radix-accordion-content-height)' },
         to: { height: '0' }
+      },
+      spin: {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' }
       }
     },
     animation: {
       'accordion-down': 'accordion-down 0.2s ease-out',
-      'accordion-up': 'accordion-up 0.2s ease-out'
+      'accordion-up': 'accordion-up 0.2s ease-out',
+      'spin-slow': 'spin 3s linear infinite'
     }
   },
   plugins: [require('tailwindcss-animate')]

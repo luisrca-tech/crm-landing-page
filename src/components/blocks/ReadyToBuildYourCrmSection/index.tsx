@@ -2,8 +2,8 @@ import ContactUsForm from './ContactUs';
 
 export function ReadyToBuildYourCrm() {
   return (
-    <section>
-      <div className="flex flex-col gap-8 pb-[61px] pt-[14px] md:hidden lg:hidden">
+    <>
+      <div className=" flex flex-col gap-8 pb-[61px] pt-[14px] md:hidden lg:hidden" id='contato'>
         <h2 className=" font-opensans text-[32px] font-bold italic leading-[38px] tracking-[-0.5px] text-[#A0BFF8]">
           Pronto para construir o CRM dos seus sonhos?
         </h2>
@@ -21,6 +21,6 @@ export function ReadyToBuildYourCrm() {
           <ContactUsForm />
         </div>
       </div>
-    </section>
+    </>
   );
 }

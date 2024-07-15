@@ -4,6 +4,7 @@ import Blocks from '/public/images/Blocks.png';
 import DesktopBlocks from '/public/images/DesktopBlocks.png';
 
 import Link from 'next/link';
+import { Button } from '../ui/button';
 
 export function ReadyToBuildYourCrm() {
   return (
@@ -12,12 +13,9 @@ export function ReadyToBuildYourCrm() {
         <h2 className="pt-[14px] font-opensans text-[32px] font-bold italic leading-[38px] tracking-[-0.5px] text-[#A0BFF8]">
           Pronto para construir o CRM dos seus sonhos?
         </h2>
-        <Link
-          className="h-12 rounded-xl bg-blue-500 px-4 py-3 text-center text-base font-normal tracking-[-0.2px] text-base-100"
-          href="#"
-        >
+        <Button as="a" href="#" filled="secondary">
           Comece gratuitamente
-        </Link>
+        </Button>
         <Image
           className="mt-8 pb-6"
           src={Blocks as StaticImageData}
@@ -30,12 +28,9 @@ export function ReadyToBuildYourCrm() {
             Pronto para construir o
             <span className="text-base-100"> CRM dos sonhos?</span>
           </h2>
-          <Link
-            className="h-12 max-w-[202px] rounded-xl bg-blue-500 px-4 py-3 text-center text-base font-normal tracking-[-0.2px] text-base-100"
-            href="#"
-          >
+          <Button as="a" href="#" filled="secondary">
             Comece gratuitamente
-          </Link>
+          </Button>
         </div>
         <div className="max-w-[740px] py-[7px]">
           <Image

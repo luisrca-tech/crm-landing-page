@@ -15,6 +15,7 @@ import {
 import Link from 'next/link';
 import { NavigationItems } from '~/constants/navigation-items';
 import { Container } from './Container';
+import { Button } from './ui/button';
 
 export function Header() {
   return (
@@ -68,27 +69,19 @@ export function Header() {
                 </nav>
               </div>
               <SheetFooter className="mt-auto flex flex-col items-center justify-center space-y-2">
-                <Link href="#">
-                  <button className="flex h-10 w-[4.8125rem] items-center justify-center rounded-xl border px-2 py-4 font-normal text-base-500">
-                    Entrar
-                  </button>
-                </Link>
-                <Link href="#">
-                  <button className="flex h-10 w-[14.5rem] items-center justify-center rounded-xl border bg-base-600 px-2 py-4 font-normal text-base-100">
-                    Cadastre-se gratuitamente
-                  </button>
-                </Link>
+                <Button outline="primary">Entrar</Button>
+                <Button as="a" href="#" filled="primary">
+                  Cadastre-se gratuitamente
+                </Button>
               </SheetFooter>
             </SheetContent>
           </Sheet>
         </div>
         <div className="ml-auto hidden items-center justify-center gap-2 lg:flex">
-          <button className="flex h-10 items-center justify-center rounded-xl border border-base-200 bg-base-100 px-4 py-2  text-base font-normal tracking-[-0.2px] text-base-500">
-            Entrar
-          </button>
-          <button className="flex h-10 items-center justify-center rounded-xl border border-base-400 bg-base-600 px-2 py-4 text-base-100">
+          <Button outline="primary">Entrar</Button>
+          <Button as="a" href="#" filled="primary">
             Cadastre-se gratuitamente
-          </button>
+          </Button>
         </div>
       </Container>
     </header>

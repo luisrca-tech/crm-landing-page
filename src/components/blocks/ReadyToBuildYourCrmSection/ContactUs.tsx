@@ -2,13 +2,13 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
-import { type SubmitHandler, useForm } from 'react-hook-form';
+import { useForm, type SubmitHandler } from 'react-hook-form';
 import { toast } from 'sonner';
 import ErrorMessage from '~/components/ui/ErrorMessage';
 import Input from '~/components/ui/Input';
 import { LoadingSpinner } from '~/components/ui/LoadingSpinner';
-import { ContactUsSchema } from '~/schemas/ContactUs.schema';
-import { ContactUs } from '~/types/ContactUs.type';
+import { ContactUs } from '~/schemas/ContactUs.schema';
+import type { ContactUsSchema } from '~/types/ContactUs.type';
 
 export default function ContactUsForm() {
   const [isLoading, setIsLoading] = useState(false);

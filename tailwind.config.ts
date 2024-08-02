@@ -41,6 +41,9 @@ export default {
         400: 'rgb(var(--blue-400) / <alpha-value>)',
         500: 'rgb(var(--blue-500) / <alpha-value>)',
         600: 'rgb(var(--blue-600) / <alpha-value>)'
+      },
+      error: {
+        100: 'rgb(var(--color-error-100) / <alpha-value>)'
       }
     },
     fontFamily: {

@@ -10,7 +10,7 @@ import {
   useActiveIndex
 } from '~/components/ui/carousel';
 import { CarouselItems } from '~/constants/CarouselItems';
-import { SectionsBoxes } from '../SectionsBoxes';
+import { SectionsBoxes } from '../../ui/SectionsBoxes';
 
 export function MobileCarousel() {
   const [api, setApi] = useState<CarouselApi | null>(null);

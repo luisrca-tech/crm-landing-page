@@ -7,6 +7,7 @@ import { Container } from './Container';
 import { ButtonLink } from './ui/button';
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetFooter,
   SheetHeader,
@@ -61,7 +62,7 @@ export function Header() {
                           className="mt-4 flex flex-col gap-4 text-sm text-base-dark-600"
                           href={item.href}
                         >
-                          {item.label}
+                          <SheetClose>{item.label}</SheetClose>
                         </Link>
                       </li>
                     ))}

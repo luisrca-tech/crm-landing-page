@@ -7,7 +7,7 @@ import { ReadyToBuildYourCrm } from '~/components/blocks/ReadyToBuildYourCrm';
 export default function HomePage() {
   return (
     <main>
-      <section>
+      <section id="inicio">
         <Container>
           <Hero />
         </Container>

@@ -6,9 +6,9 @@ import Input from '../ui/Input';
 export default function ContactUsForm() {
   return (
     <form className="flex flex-col gap-6 rounded-lg bg-base-dark-100 p-8 text-lg text-base-500">
-      <div className="max-w-[290px] text-2xl font-bold">
+      <h3 className="max-w-[290px] text-2xl font-bold">
         Inscreva-se para versão gratuita
-      </div>
+      </h3>
       <div>
         <label>Nome</label>
         <Input type="text" />

@@ -1,10 +1,4 @@
-import { z } from "zod";
+import type { z } from "zod";
+import type { ContactUs } from "~/schemas/ContactUs.schema";
 
-export const ContactUs = z.object({
-  name: z.string().min(3, { message: "Por favor, digite seu nome!" }).max(255),
-  email: z
-    .string()
-    .email({ message: "Por favor, digite um email valido!" })
-    .min(3, { message: "Por favor, digite seu email!" })
-    .max(255),
-});
+export type ContactUsSchema = z.infer<typeof ContactUs>;

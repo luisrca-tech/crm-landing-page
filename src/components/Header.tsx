@@ -1,8 +1,10 @@
 'use client';
 
 import Image, { type StaticImageData } from 'next/image';
-import LogoAttios from '/public/images/logo.svg';
-import Menu from '/public/images/menu.svg';
+import Link from 'next/link';
+import { NavigationItems } from '~/constants/navigation-items';
+import { Container } from './Container';
+import { ButtonLink } from './ui/button';
 import {
   Sheet,
   SheetContent,
@@ -12,10 +14,8 @@ import {
   SheetTitle,
   SheetTrigger
 } from './ui/sheet';
-import Link from 'next/link';
-import { NavigationItems } from '~/constants/navigation-items';
-import { Container } from './Container';
-import { Button } from './ui/button';
+import LogoAttios from '/public/images/logo.svg';
+import Menu from '/public/images/menu.svg';
 
 export function Header() {
   return (
@@ -69,19 +69,23 @@ export function Header() {
                 </nav>
               </div>
               <SheetFooter className="mt-auto flex flex-col items-center justify-center space-y-2">
-                <Button outline="primary">Entrar</Button>
-                <Button as="a" href="#" filled="primary">
+                <ButtonLink href="#" outline="primary">
+                  Entrar
+                </ButtonLink>
+                <ButtonLink href="#" filled="primary">
                   Cadastre-se gratuitamente
-                </Button>
+                </ButtonLink>
               </SheetFooter>
             </SheetContent>
           </Sheet>
         </div>
         <div className="ml-auto hidden items-center justify-center gap-2 lg:flex">
-          <Button outline="primary">Entrar</Button>
-          <Button as="a" href="#" filled="primary">
+          <ButtonLink href="#" outline="primary">
+            Entrar
+          </ButtonLink>
+          <ButtonLink href="#" filled="primary">
             Cadastre-se gratuitamente
-          </Button>
+          </ButtonLink>
         </div>
       </Container>
     </header>

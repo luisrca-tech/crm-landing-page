@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
 import autoAnimate from '@formkit/auto-animate';
+import { useEffect, useRef } from 'react';
 
 type Props = {
   children?: React.ReactNode;
@@ -15,7 +15,7 @@ export default function ErrorMessage({ children }: Props) {
   return (
     <div ref={parent}>
       {children && (
-        <p className="text-error-100 pt-1 text-xs font-semibold">{children}</p>
+        <p className="pt-1 text-xs font-semibold text-error-100">{children}</p>
       )}
     </div>
   );

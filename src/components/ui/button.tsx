@@ -28,6 +28,7 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
   ({ className, filled, outline, ...props }, ref) => {
     return (
       <Link
+        ref={ref}
         className={cn(buttonVariants({ filled, outline, className }))}
         {...props}
       ></Link>

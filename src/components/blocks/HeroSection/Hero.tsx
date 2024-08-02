@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { Button } from '~/components/ui/button';
+import { ButtonLink } from '~/components/ui/Button/ButtonLink';
 
 export function Hero() {
   return (
@@ -11,9 +10,7 @@ export function Hero() {
         <span className="lg:pl-6">Poderoso</span>, flexível e movido a dados,
         Attio traz o melhor CRM para as necessidades da sua empresa.
       </p>
-      <Button filled="primary" as="a" href="#">
-        Comece gratuitamente
-      </Button>
+      <ButtonLink href="#">Comece gratuitamente</ButtonLink>
     </div>
   );
 }

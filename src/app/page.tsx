@@ -1,8 +1,8 @@
 import { Container } from '~/components/Container';
-import { ReadyToBuildYourCrm } from '~/components/ReadyToBuildYourCrmSection';
 import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSection';
 import { Hero } from '~/components/blocks/HeroSection/Hero';
 import { HeroImage } from '~/components/blocks/HeroSection/HeroImage';
+import { ReadyToBuildYourCrm } from '~/components/blocks/ReadyToBuildYourCrmSection';
 
 export default function HomePage() {
   return (

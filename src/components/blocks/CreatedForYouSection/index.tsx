@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-import Avatar from '/public/images/FristAvatar.png';
 import Box from '/public/images/Box.png';
+import Avatar from '/public/images/FristAvatar.png';
 
-import { FeaturesBox } from './FeaturesBox';
-import { Testimonials } from '../../ui/Testimonials';
-import { MobileCarousel } from './MobileCarousel';
 import { HeadingSection } from '~/components/ui/HeadingSection';
+import { Testimonials } from '../../ui/Testimonials';
+import { FeaturesBox } from './FeaturesBox';
+import { MobileCarousel } from './MobileCarousel';
 
 export function CreatedForYou() {
   return (

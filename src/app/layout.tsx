@@ -1,3 +1,4 @@
+import { Toaster } from 'sonner';
 import { inter } from '~/assets/fonts';
 import { Header } from '~/components/Header';
 import '~/styles/globals.css';
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Toaster richColors />
       </body>
     </html>
   );

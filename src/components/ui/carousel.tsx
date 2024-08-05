@@ -1,13 +1,13 @@
 'use client';
 
-import * as React from 'react';
 import useEmblaCarousel, {
   type UseEmblaCarouselType
 } from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import * as React from 'react';
 
 import { cn } from '~/lib/utils';
-import { Button } from '~/components/ui/button';
+import { Button } from './Button/Button';
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -215,7 +215,7 @@ CarouselItem.displayName = 'CarouselItem';
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, filled = 'outline', ...props }, ref) => {
+>(({ className, ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
@@ -243,7 +243,7 @@ CarouselPrevious.displayName = 'CarouselPrevious';
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, filled = 'outline', ...props }, ref) => {
+>(({ className, ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
 
   return (
@@ -268,11 +268,11 @@ const CarouselNext = React.forwardRef<
 CarouselNext.displayName = 'CarouselNext';
 
 export {
-  type CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
-  useActiveIndex
+  CarouselPrevious,
+  useActiveIndex,
+  type CarouselApi
 };

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SecurityCertificates } from '~/constants/SecurityCertificates';
+import { ButtonLink } from './ui/Button/ButtonLink';
 
 export function ClimbSafely() {
   return (
@@ -18,12 +18,9 @@ export function ClimbSafely() {
               Attio é auditado e certificado pelas principais certificações da
               industria.
             </span>
-            <Link
-              className="mt-5 flex h-12 items-center justify-center rounded-xl border border-base-400 bg-base-600 px-3 py-4 text-base font-normal tracking-[-0.2px] text-base-100"
-              href="#"
-            >
+            <ButtonLink href="#" filled="primary" className="mt-5 py-4">
               Comece gratuitamente
-            </Link>
+            </ButtonLink>
           </div>
           <div className="w-full border-t border-base-200 xl:hidden"></div>
           <div className="flex w-full flex-wrap items-center justify-around gap-8 px-4 py-10 xl:max-h-5 xl:flex-nowrap xl:gap-12 xl:border xl:border-base-200 xl:px-11 xl:py-28">

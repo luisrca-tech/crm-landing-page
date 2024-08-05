@@ -4,7 +4,7 @@ import Image, { type StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { NavigationItems } from '~/constants/navigation-items';
 import { Container } from './Container';
-import { ButtonLink } from './ui/button';
+import { ButtonLink } from './ui/Button/ButtonLink';
 import {
   Sheet,
   SheetClose,

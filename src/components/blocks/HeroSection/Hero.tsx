@@ -10,7 +10,9 @@ export function Hero() {
         <span className="lg:pl-6">Poderoso</span>, flexível e movido a dados,
         Attio traz o melhor CRM para as necessidades da sua empresa.
       </p>
-      <ButtonLink href="#">Comece gratuitamente</ButtonLink>
+      <ButtonLink href="#" filled="primary">
+        Comece gratuitamente
+      </ButtonLink>
     </div>
   );
 }

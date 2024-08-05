@@ -4,20 +4,20 @@ import Image from 'next/image';
 import { useState } from 'react';
 import {
   Carousel,
-  CarouselApi,
   CarouselContent,
   CarouselItem,
-  useActiveIndex
+  useActiveIndex,
+  type CarouselApi
 } from '~/components/ui/carousel';
 import { CarouselItems } from '~/constants/CarouselItems';
-import { SectionsBoxes } from '../SectionsBoxes';
+import { SectionsBoxes } from '../../ui/SectionsBoxes';
 
 export function MobileCarousel() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const activeIndex = useActiveIndex(api);
 
   return (
-    <Carousel className='lg:hidden md:hidden' setApi={setApi}>
+    <Carousel className="md:hidden lg:hidden" setApi={setApi}>
       <CarouselContent className="justify-between">
         {CarouselItems.map((item) => {
           return (

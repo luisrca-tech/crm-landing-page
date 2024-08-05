@@ -1,13 +1,13 @@
 'use client';
 
-import * as React from 'react';
 import useEmblaCarousel, {
   type UseEmblaCarouselType
 } from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import * as React from 'react';
 
 import { cn } from '~/lib/utils';
-import { Button } from '~/components/ui/button';
+import { Button } from './Button/Button';
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -44,7 +44,6 @@ function useCarousel() {
 
 function useActiveIndex(api: CarouselApi | null) {
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
-
   React.useEffect(() => {
     if (api) {
       const handleSlideChange = () => {
@@ -56,7 +55,6 @@ function useActiveIndex(api: CarouselApi | null) {
       };
     }
   }, [api]);
-
   return activeIndex;
 }
 
@@ -215,14 +213,13 @@ CarouselItem.displayName = 'CarouselItem';
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, variant = 'outline', size = 'icon', ...props }, ref) => {
+>(({ className, ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
     <Button
       ref={ref}
-      variant={variant}
-      size={size}
+      filled="primary"
       className={cn(
         'absolute  h-8 w-8 rounded-full',
         orientation === 'horizontal'
@@ -244,14 +241,12 @@ CarouselPrevious.displayName = 'CarouselPrevious';
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, variant = 'outline', size = 'icon', ...props }, ref) => {
+>(({ className, ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
 
   return (
     <Button
       ref={ref}
-      variant={variant}
-      size={size}
       className={cn(
         'absolute h-8 w-8 rounded-full',
         orientation === 'horizontal'
@@ -271,11 +266,11 @@ const CarouselNext = React.forwardRef<
 CarouselNext.displayName = 'CarouselNext';
 
 export {
-  type CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
-  useActiveIndex
+  CarouselPrevious,
+  useActiveIndex,
+  type CarouselApi
 };

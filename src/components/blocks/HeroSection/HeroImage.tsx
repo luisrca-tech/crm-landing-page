@@ -1,6 +1,6 @@
+import Image from 'next/image';
+import { Container } from '~/components/Container';
 import HeroImageData from '/public/images/Hero.png';
-import { Container } from '../Container';
-import Image, { StaticImageData } from 'next/image';
 
 export function HeroImage() {
   return (
@@ -8,7 +8,7 @@ export function HeroImage() {
       <div className="lg:hidden">
         <Image
           priority
-          src={HeroImageData as StaticImageData}
+          src={HeroImageData}
           alt="Imagem de um gráfico de tarefas"
         />
       </div>
@@ -17,7 +17,7 @@ export function HeroImage() {
           <div className="hidden lg:block">
             <Image
               priority
-              src={HeroImageData as StaticImageData}
+              src={HeroImageData}
               alt="Imagem de um gráfico de tarefas"
             />
           </div>

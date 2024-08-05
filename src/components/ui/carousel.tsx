@@ -44,7 +44,6 @@ function useCarousel() {
 
 function useActiveIndex(api: CarouselApi | null) {
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
-
   React.useEffect(() => {
     if (api) {
       const handleSlideChange = () => {
@@ -56,7 +55,6 @@ function useActiveIndex(api: CarouselApi | null) {
       };
     }
   }, [api]);
-
   return activeIndex;
 }
 

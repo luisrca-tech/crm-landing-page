@@ -4,7 +4,7 @@ import Box from '/public/images/Box.png';
 import Avatar from '/public/images/FristAvatar.png';
 
 import { HeadingSection } from '~/components/ui/HeadingSection';
-import { Testimonials } from '../../ui/Testimonials';
+import { Testimonials } from '~/components/ui/Testimonials';
 import { FeaturesBox } from './FeaturesBox';
 import { MobileCarousel } from './MobileCarousel';
 

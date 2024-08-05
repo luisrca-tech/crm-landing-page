@@ -1,5 +1,6 @@
 import { ClimbSafely } from '~/components/ClimbSafely';
 import { Container } from '~/components/Container';
+import { AndMuchMore } from '~/components/blocks/AndMuchMoreSection';
 import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSection';
 import { Hero } from '~/components/blocks/HeroSection/Hero';
 import { HeroImage } from '~/components/blocks/HeroSection/HeroImage';
@@ -20,16 +21,21 @@ export default function HomePage() {
           <CreatedForYouWithBoxline />
         </section>
       </Container>
-      <section className="bg-base-600 lg:bg-base-dark-600">
-        <Container>
-          <LovedByEnterprising />
-        </Container>
-      </section>
       <Container>
         <section className="pb-[3.375rem] lg:pb-28">
           <ClimbSafely />
         </section>
       </Container>
+      <section className=" bg-base-600 lg:bg-base-dark-600">
+        <Container>
+          <AndMuchMore />
+        </Container>
+      </section>
+      <section className="bg-base-600 lg:bg-base-dark-600">
+        <Container>
+          <LovedByEnterprising />
+        </Container>
+      </section>
       <section className="bg-blue-600">
         <Container>
           <ReadyToBuildYourCrm />

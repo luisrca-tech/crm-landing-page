@@ -15,7 +15,7 @@ export function BlackSectionsBoxes({
   return (
     <div
       className={cn(
-        'w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1 h-fit',
+        'h-fit w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1',
         rootClassName
       )}
     >

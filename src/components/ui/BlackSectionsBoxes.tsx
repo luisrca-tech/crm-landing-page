@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react';
 import { cn } from '~/lib/utils';
+
 interface BlackSectionsBoxesProps {
   children: ReactNode;
   rootClassName?: string;
@@ -14,7 +15,7 @@ export function BlackSectionsBoxes({
   return (
     <div
       className={cn(
-        'w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1',
+        'h-fit w-full rounded-3xl border border-base-500 bg-base-dark-600 p-1',
         rootClassName
       )}
     >

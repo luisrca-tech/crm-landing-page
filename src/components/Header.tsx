@@ -1,10 +1,13 @@
 'use client';
 
 import Image, { type StaticImageData } from 'next/image';
-import LogoAttios from '/public/images/logo.svg';
-import Menu from '/public/images/menu.svg';
+import Link from 'next/link';
+import { NavigationItems } from '~/constants/navigation-items';
+import { Container } from './Container';
+import { ButtonLink } from './ui/Button/ButtonLink';
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetFooter,
   SheetHeader,
@@ -12,9 +15,8 @@ import {
   SheetTitle,
   SheetTrigger
 } from './ui/sheet';
-import Link from 'next/link';
-import { NavigationItems } from '~/constants/navigation-items';
-import { Container } from './Container';
+import LogoAttios from '/public/images/logo.svg';
+import Menu from '/public/images/menu.svg';
 
 export function Header() {
   return (
@@ -60,7 +62,7 @@ export function Header() {
                           className="mt-4 flex flex-col gap-4 text-sm text-base-dark-600"
                           href={item.href}
                         >
-                          {item.label}
+                          <SheetClose>{item.label}</SheetClose>
                         </Link>
                       </li>
                     ))}
@@ -68,27 +70,23 @@ export function Header() {
                 </nav>
               </div>
               <SheetFooter className="mt-auto flex flex-col items-center justify-center space-y-2">
-                <Link href="#">
-                  <button className="flex h-10 w-[4.8125rem] items-center justify-center rounded-xl border px-2 py-4 font-normal text-base-500">
-                    Entrar
-                  </button>
-                </Link>
-                <Link href="#">
-                  <button className="flex h-10 w-[14.5rem] items-center justify-center rounded-xl border bg-base-600 px-2 py-4 font-normal text-base-100">
-                    Cadastre-se gratuitamente
-                  </button>
-                </Link>
+                <ButtonLink href="#" outline="primary">
+                  Entrar
+                </ButtonLink>
+                <ButtonLink href="#" filled="primary">
+                  Cadastre-se gratuitamente
+                </ButtonLink>
               </SheetFooter>
             </SheetContent>
           </Sheet>
         </div>
         <div className="ml-auto hidden items-center justify-center gap-2 lg:flex">
-          <button className="flex h-10 items-center justify-center rounded-xl border border-base-200 bg-base-100 px-4 py-2  text-base font-normal tracking-[-0.2px] text-base-500">
+          <ButtonLink href="#" outline="primary">
             Entrar
-          </button>
-          <button className="flex h-10 items-center justify-center rounded-xl border border-base-400 bg-base-600 px-2 py-4 text-base-100">
+          </ButtonLink>
+          <ButtonLink href="#" filled="primary">
             Cadastre-se gratuitamente
-          </button>
+          </ButtonLink>
         </div>
       </Container>
     </header>

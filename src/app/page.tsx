@@ -20,7 +20,7 @@ export default function HomePage() {
         </section>
       </Container>
       <Container>
-        <section>
+        <section className="pb-[3.375rem] lg:pb-28">
           <ClimbSafely />
         </section>
       </Container>

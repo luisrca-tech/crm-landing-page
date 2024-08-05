@@ -26,6 +26,11 @@ export default function HomePage() {
           <ClimbSafely />
         </section>
       </Container>
+      <section className=" bg-base-600 lg:bg-base-dark-600">
+        <Container>
+          <AndMuchMore />
+        </Container>
+      </section>
       <section className="bg-base-600 lg:bg-base-dark-600">
         <Container>
           <LovedByEnterprising />
@@ -34,11 +39,6 @@ export default function HomePage() {
       <section className="bg-blue-600">
         <Container>
           <ReadyToBuildYourCrm />
-        </Container>
-      </section>
-      <section className=" bg-base-600 lg:bg-base-dark-600">
-        <Container>
-          <AndMuchMore />
         </Container>
       </section>
     </main>

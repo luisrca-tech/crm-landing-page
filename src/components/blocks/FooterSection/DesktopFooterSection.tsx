@@ -12,19 +12,22 @@ export function DesktopFooterSection() {
               className="flex max-w-[189px] flex-col gap-3 text-sm font-normal"
             >
               <h4 className=" text-base-300">{item.title}</h4>
-              <div className="flex flex-col gap-[6px]">
-                {item.contents.map((content, i) => {
-                  return (
-                    <Link
-                      href="#"
-                      key={`${content} - ${i}`}
-                      className="text-base-400 hover:text-base-300"
-                    >
-                      {content}
-                    </Link>
-                  );
-                })}
-              </div>
+              <nav>
+                <ul className="flex flex-col gap-[6px]">
+                  {item.contents.map((content, i) => {
+                    return (
+                      <li key={`${content} - ${i}`}>
+                        <Link
+                          href="#"
+                          className="text-base-400 hover:text-base-300"
+                        >
+                          {content}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
             </div>
           );
         })}

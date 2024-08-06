@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 import ErrorMessage from '~/components/ui/ErrorMessage';
 import Input from '~/components/ui/Input';
 import { LoadingSpinner } from '~/components/ui/LoadingSpinner';
-import { ContactUs } from '~/schemas/ContactUs.schema';
+import { contactUsSchema } from '~/schemas/ContactUs.schema';
 import type { ContactUsSchema } from '~/types/ContactUs.type';
 
 export default function ContactUsForm() {
@@ -19,7 +19,7 @@ export default function ContactUsForm() {
     formState: { errors },
     reset
   } = useForm<ContactUsSchema>({
-    resolver: zodResolver(ContactUs)
+    resolver: zodResolver(contactUsSchema)
   });
 
   const onSubmit: SubmitHandler<ContactUsSchema> = (data) => {

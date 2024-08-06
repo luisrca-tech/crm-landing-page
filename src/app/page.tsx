@@ -2,11 +2,13 @@ import { ClimbSafely } from '~/components/ClimbSafely';
 import { Container } from '~/components/Container';
 import { AndMuchMore } from '~/components/blocks/AndMuchMoreSection';
 import { CreatedForYouWithBoxline } from '~/components/blocks/CreatedForYouSection';
+import { Footer } from '~/components/blocks/FooterSection';
 import { Hero } from '~/components/blocks/HeroSection/Hero';
 import { HeroImage } from '~/components/blocks/HeroSection/HeroImage';
 import { LovedByEnterprising } from '~/components/blocks/LovedByEnterprisingSection';
 import { MadeForTeamWithBoxLine } from '~/components/blocks/MadeForTeamSection';
 import { ReadyToBuildYourCrm } from '~/components/blocks/ReadyToBuildYourCrmSection';
+import { DataAndFlowsWithBoxline } from '~/components/blocks/YourDataAndFlowsSection';
 
 export default function HomePage() {
   return (
@@ -20,6 +22,16 @@ export default function HomePage() {
       <Container>
         <section>
           <CreatedForYouWithBoxline />
+        </section>
+      </Container>
+      <section>
+        <Container>
+          <DataAndFlowsWithBoxline />
+        </Container>
+      </section>
+      <Container>
+        <section>
+          <MadeForTeamWithBoxLine />
         </section>
       </Container>
       <Container>
@@ -37,16 +49,17 @@ export default function HomePage() {
           <LovedByEnterprising />
         </Container>
       </section>
-      <Container>
-        <section>
-          <MadeForTeamWithBoxLine />
-        </section>
-      </Container>
       <section className="mt-20 bg-blue-600">
         <Container>
           <ReadyToBuildYourCrm />
         </Container>
       </section>
+      <div className="relative bg-base-600 lg:bg-base-dark-600">
+        <div className="absolute bottom-24 hidden w-full border  border-base-400 lg:block"></div>
+        <Container>
+          <Footer />
+        </Container>
+      </div>
     </main>
   );
 }

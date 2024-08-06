@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const ContactUs = z.object({
+export const contactUsSchema = z.object({
   name: z.string().min(3, { message: "Por favor, digite seu nome!" }).max(255),
   email: z
     .string()

@@ -3,18 +3,28 @@ import { cn } from '~/lib/utils';
 
 interface SectionsBoxesProps {
   children: ReactNode;
-  className?: string;
+  rootClassName?: string;
+  internalClassName?: string;
 }
 
-export function SectionsBoxes({ children, className }: SectionsBoxesProps) {
+export function SectionsBoxes({
+  children,
+  rootClassName,
+  internalClassName
+}: SectionsBoxesProps) {
   return (
     <div
       className={cn(
         'w-full rounded-[20px] border border-base-200 bg-base-dark-100 p-[3px]',
-        className
+        rootClassName
       )}
     >
-      <div className="h-full w-full overflow-hidden rounded-[20px] border border-base-200 bg-base-100">
+      <div
+        className={cn(
+          'h-full w-full overflow-hidden rounded-[20px] border border-base-200 bg-base-100',
+          internalClassName
+        )}
+      >
         {children}
       </div>
     </div>

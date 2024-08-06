@@ -16,6 +16,10 @@ export default {
         '2xl': '87.5rem',
         '3xl': '100rem'
       },
+      gridTemplateColumns: {
+        'model-section': '614px 610px'
+      },
+      
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

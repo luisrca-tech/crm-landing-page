@@ -1,16 +1,16 @@
 import Image from 'next/image';
 
-import TableView from '/public/images/TableView.png';
-import Iphone from '/public/images/Iphone.png';
-import WorkspaceAccess from '/public/images/WorkspaceAccess.png';
+import { SectionsBoxes } from '~/components/ui/SectionsBoxes';
+
 import Config from '/public/images/Config.png';
 import DiscoveryCall from '/public/images/DiscoveryCall.png';
-
-import { SectionsBoxes } from '../SectionsBoxes';
+import Iphone from '/public/images/Iphone.png';
+import TableView from '/public/images/TableView.png';
+import WorkspaceAccess from '/public/images/WorkspaceAccess.png';
 
 export function MobileSectionView() {
   return (
-    <div className="mt-9 flex flex-col gap-7 lg:hidden md:hidden">
+    <div className="mt-9 flex flex-col gap-7 md:hidden lg:hidden">
       <SectionsBoxes>
         <div className="flex p-6">
           <h2 className="flex flex-col gap-1 text-lg font-normal tracking-[-0.2px] text-base-600">

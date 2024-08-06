@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Box from '/public/images/Box.png';
 import Avatar from '/public/images/FourthAvatar.png';
 
-import { Testimonials } from '../Testimonials';
-import { HeadingSection } from '../HeadingSection';
+import { HeadingSection } from '~/components/ui/HeadingSection';
+import { Testimonials } from '~/components/ui/Testimonials';
 import { DesktopSectionView } from './DesktopSectionView';
 import { MobileSectionView } from './MobileSectionView';
 

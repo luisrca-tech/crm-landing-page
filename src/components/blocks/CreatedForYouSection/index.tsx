@@ -1,8 +1,10 @@
 import Image from 'next/image';
 
-import Avatar from '/public/images/FristAvatar.png';
 import Box from '/public/images/Box.png';
+import Avatar from '/public/images/FristAvatar.png';
 
+import { HeadingSection } from '~/components/ui/HeadingSection';
+import { Testimonials } from '~/components/ui/Testimonials';
 import { FeaturesBox } from './FeaturesBox';
 import { MobileCarousel } from './MobileCarousel';
 import { HeadingSection } from '~/components/ui/HeadingSection';
@@ -10,7 +12,7 @@ import { Testimonials } from '~/components/ui/Testimonials';
 
 export function CreatedForYou() {
   return (
-    <section className="flex w-full flex-col gap-16">
+    <div className="flex w-full flex-col gap-16" id="inicio">
       <HeadingSection
         title="O CRM criado para ser seu!"
         description="Mova qualquer coisa e garanta que tudo esta de acordo com as necessidades do seu negócios, não o contrário!"
@@ -27,7 +29,7 @@ export function CreatedForYou() {
         nameDesktop="DeGrasse Schrader"
         roleDesktop="Chief of Staff, Pallet"
       />
-    </section>
+    </div>
   );
 }
 

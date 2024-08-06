@@ -1,4 +1,4 @@
-import { type z } from 'zod';
-import { type contactUsSchema } from '~/schemas/contactUs.schema';
+import type { z } from "zod";
+import type { contactUsSchema } from "~/schemas/ContactUs.schema";
 
-export type ContactUs = z.infer<typeof contactUsSchema>
+export type ContactUsSchema = z.infer<typeof contactUsSchema>;

@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { useState } from 'react';
 import {
   Carousel,
-  CarouselApi,
   CarouselContent,
   CarouselItem,
-  useActiveIndex
+  useActiveIndex,
+  type CarouselApi
 } from '~/components/ui/carousel';
 import { SectionsBoxes } from '~/components/ui/SectionsBoxes';
 import { CarouselItems } from '~/constants/CarouselItems';

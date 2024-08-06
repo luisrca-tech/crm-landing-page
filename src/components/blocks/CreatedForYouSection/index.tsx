@@ -7,8 +7,6 @@ import { HeadingSection } from '~/components/ui/HeadingSection';
 import { Testimonials } from '~/components/ui/Testimonials';
 import { FeaturesBox } from './FeaturesBox';
 import { MobileCarousel } from './MobileCarousel';
-import { HeadingSection } from '~/components/ui/HeadingSection';
-import { Testimonials } from '~/components/ui/Testimonials';
 
 export function CreatedForYou() {
   return (

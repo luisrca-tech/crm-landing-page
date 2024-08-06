@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   Accordion,
   AccordionContent,
@@ -24,7 +25,7 @@ export function AccordionMobile() {
                     className=" text-center text-base text-base-400"
                     key={content}
                   >
-                    {content}
+                    <Link href="#">{content}</Link>
                   </AccordionContent>
                 );
               })}

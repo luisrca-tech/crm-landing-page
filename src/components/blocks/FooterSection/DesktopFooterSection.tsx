@@ -13,11 +13,15 @@ export function DesktopFooterSection() {
             >
               <h4 className=" text-base-300">{item.title}</h4>
               <div className="flex flex-col gap-[6px]">
-                {item.contents.map((content) => {
+                {item.contents.map((content, i) => {
                   return (
-                    <span className="text-base-400 hover:text-base-300">
+                    <Link
+                      href="#"
+                      key={`${content} - ${i}`}
+                      className="text-base-400 hover:text-base-300"
+                    >
                       {content}
-                    </span>
+                    </Link>
                   );
                 })}
               </div>

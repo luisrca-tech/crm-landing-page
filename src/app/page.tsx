@@ -6,6 +6,7 @@ import { Footer } from '~/components/blocks/FooterSection';
 import { Hero } from '~/components/blocks/HeroSection/Hero';
 import { HeroImage } from '~/components/blocks/HeroSection/HeroImage';
 import { LovedByEnterprising } from '~/components/blocks/LovedByEnterprisingSection';
+import { MadeForTeamWithBoxLine } from '~/components/blocks/MadeForTeamSection';
 import { ReadyToBuildYourCrm } from '~/components/blocks/ReadyToBuildYourCrmSection';
 import { DataAndFlowsWithBoxline } from '~/components/blocks/YourDataAndFlowsSection';
 
@@ -28,6 +29,11 @@ export default function HomePage() {
           <DataAndFlowsWithBoxline />
         </Container>
       </section>
+      <Container>
+        <section>
+          <MadeForTeamWithBoxLine />
+        </section>
+      </Container>
       <Container>
         <section className="pb-[3.375rem] lg:pb-28">
           <ClimbSafely />

@@ -5,10 +5,10 @@ import { MuchMoreItems } from '~/constants/MuchMoreItems';
 export function DesktopSectionView() {
   return (
     <div className="hidden lg:flex">
-      <div className="flex lg:justify-center flex-wrap gap-7 2xl:justify-start">
+      <div className="flex flex-wrap gap-7 lg:justify-center 2xl:justify-start">
         {MuchMoreItems.map((item) => {
           return (
-            <BlackSectionsBoxes rootClassName="lg:max-w-[420px]">
+            <BlackSectionsBoxes key={item.id} rootClassName="lg:max-w-[420px]">
               <Image src={item.image} alt={item.alt} />
               <div className="flex flex-col gap-[6px]">
                 <h3 className="text-xl font-medium leading-8 tracking-[-0.3px] text-base-200">

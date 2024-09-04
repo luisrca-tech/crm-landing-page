@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { CarouselItems } from '~/constants/CarouselItems';
-import { useState, useEffect } from 'react';
 
 export function FeaturesBox() {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
@@ -49,7 +49,7 @@ export function FeaturesBox() {
             </div>
           ))}
         </div>
-        {selectedItemData && selectedItemData.imageDesktop && (
+        {selectedItemData?.imageDesktop && (
           <div className="flex max-h-[25rem] flex-col rounded-[20px] border border-base-200 bg-base-dark-100">
             <Image
               className="max-h-[25rem] w-full rounded-[20px] object-cover"

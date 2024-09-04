@@ -1,11 +1,11 @@
-import { StaticImageData } from 'next/image';
+import { type StaticImageData } from 'next/image';
 
-import Sebastian from '../../public/images/Sebastian.png';
-import Alon from '../../public/images/Alon.png';
 import Alexandra from '../../public/images/Alexandra.png';
-import Khrisna from '../../public/images/Khrisna.png';
-import VillaGouse from '../../public/images/VillaGouse.png';
+import Alon from '../../public/images/Alon.png';
 import Damian from '../../public/images/Damian.png';
+import Khrisna from '../../public/images/Khrisna.png';
+import Sebastian from '../../public/images/Sebastian.png';
+import VillaGouse from '../../public/images/VillaGouse.png';
 
 interface LovedByEnterprisingItemsProps {
   id: string;

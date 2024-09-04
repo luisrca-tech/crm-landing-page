@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { cn } from '~/lib/utils';
-import { ButtonCommonProps } from '~/types/Button.type';
+import { type ButtonCommonProps } from '~/types/Button.type';
 import { buttonVariants } from './ButtonCommonStyle';
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &

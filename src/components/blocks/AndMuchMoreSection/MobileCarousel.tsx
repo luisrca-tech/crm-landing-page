@@ -5,15 +5,15 @@ import Image from 'next/image';
 import { BlackSectionsBoxes } from '~/components/ui/BlackSectionsBoxes';
 import {
   Carousel,
-  CarouselApi,
   CarouselContent,
   CarouselItem,
-  useActiveIndex
+  useActiveIndex,
+  type CarouselApi
 } from '~/components/ui/carousel';
 
-import { CarouselIndicator } from './CarouselIndicator';
 import { useState } from 'react';
 import { MuchMoreItems } from '~/constants/MuchMoreItems';
+import { CarouselIndicator } from './CarouselIndicator';
 
 export function MobileCarousel() {
   const [api, setApi] = useState<CarouselApi | null>(null);
